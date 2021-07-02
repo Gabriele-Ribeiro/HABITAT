@@ -18,7 +18,7 @@ public class Categoria {
 	
 	@NotNull
 	@Size(min = 5, max = 100)
-	private String tipo_p;
+	private String tipoProduto;
 	
 	@NotNull
 	@Size(min = 5, max = 100)
@@ -36,12 +36,12 @@ public class Categoria {
 		this.id = id;
 	}
 
-	public String getTipo_p() {
-		return tipo_p;
+	public String getTipoProduto() {
+		return tipoProduto;
 	}
 
-	public void setTipo_p(String tipo_p) {
-		this.tipo_p = tipo_p;
+	public void setTipoProduto(String tipoProduto) {
+		this.tipoProduto = tipoProduto;
 	}
 
 	public String getRecomendacoes() {

@@ -11,4 +11,8 @@ import com.habitat.HABITAT.model.Categoria;
 public interface CategoriaRepository extends JpaRepository <Categoria, Long>{
 
 	List<Categoria> findAll();
+
+	public List <Categoria> findAllByMarcasContainingIgnoreCase(String marcas);
+	public List <Categoria> findAllByTipoProdutoContainingIgnoreCase(String tipoProduto);
 }
+
