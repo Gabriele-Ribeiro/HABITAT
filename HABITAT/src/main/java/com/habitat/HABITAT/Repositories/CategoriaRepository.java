@@ -1,4 +1,4 @@
-package com.habitat.HABITAT.model.Repositories;
+package com.habitat.HABITAT.Repositories;
 
 import java.util.List;
 
@@ -11,5 +11,4 @@ import com.habitat.HABITAT.model.Categoria;
 public interface CategoriaRepository extends JpaRepository <Categoria, Long>{
 
 	List<Categoria> findAll();
-
 }

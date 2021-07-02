@@ -1,4 +1,4 @@
-package com.habitat.HABITAT.model.Controller;
+package com.habitat.HABITAT.Controller;
 
 import java.util.List;
 
@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.habitat.HABITAT.model.Categoria;
-import com.habitat.HABITAT.model.Repositories.CategoriaRepository;
 
 @RestController
 @RequestMapping("/categoria")
@@ -19,7 +18,7 @@ import com.habitat.HABITAT.model.Repositories.CategoriaRepository;
 public class CategoriaController {
 	
 	@Autowired
-	private CategoriaRepository repository;
+	private com.habitat.HABITAT.Repositories.CategoriaRepository repository;
 	
 	@GetMapping("/todos")
 	public ResponseEntity<List<Categoria>> buscarTodos(){
