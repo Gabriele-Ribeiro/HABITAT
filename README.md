@@ -9,4 +9,4 @@ De acordo com o dicionário habitat seignifica um conjunto de circunstâncias f�
 
 BACKLOG EM ANDAMENTO... :leaves:
 
-Felipe Giacomelli (Fê), Gabriele Ribeiro (Gabi), Maria Eduarda Pinheiro (Zinha), Nadya Roberta (Nadya), Thomaz Fraça (Thom).
+Felipe Giacomelli (Fê), Gabriele Ribeiro (Gabi), Maria Eduarda Pinheiro (Zinha), Nadya Fernanda (Nadya), Thomaz Fraça (Thom).
