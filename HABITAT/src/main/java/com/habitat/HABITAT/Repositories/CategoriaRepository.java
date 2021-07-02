@@ -1,4 +1,4 @@
-package com.habitat.HABITAT.model.Repositories;
+package com.habitat.HABITAT.Repositories;
 
 import java.util.List;
 
@@ -12,4 +12,7 @@ public interface CategoriaRepository extends JpaRepository <Categoria, Long>{
 
 	List<Categoria> findAll();
 
+	public List <Categoria> findAllByMarcasContainingIgnoreCase(String marcas);
+	public List <Categoria> findAllByTipoProdutoContainingIgnoreCase(String tipoProduto);
 }
+
