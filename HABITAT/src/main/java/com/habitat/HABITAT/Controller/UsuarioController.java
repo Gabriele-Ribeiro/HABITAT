@@ -37,7 +37,7 @@ public class UsuarioController {
 	
 	@GetMapping("/nome/{nome}")
 	public ResponseEntity<List<Usuario>> buscarNome(@PathVariable String nome) {
-		return ResponseEntity.ok(repository.findByNome(nome));
+		return ResponseEntity.ok(repository.findByNomeContainingIgnoreCase(nome));
 	}
 	
 	@GetMapping("/email/{email}")
