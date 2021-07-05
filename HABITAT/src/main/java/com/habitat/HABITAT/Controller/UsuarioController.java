@@ -25,14 +25,9 @@ public class UsuarioController {
 	@Autowired
 	private com.habitat.HABITAT.Repositories.UsuarioRepository repository;
 	
-	@GetMapping("/todos")
-	public ResponseEntity<List<Usuario>> buscarTodos() {
-		List<Usuario> listaUsuario = repository.findAll();
-		if (listaUsuario.isEmpty()) {
-			return ResponseEntity.status(204).build();
-		} else {
-			return ResponseEntity.status(200).body(listaUsuario);
-		}
+	@GetMapping
+	public ResponseEntity<List<Usuario>> GetAll() {
+		return ResponseEntity.ok(repository.findAll());
 	}
 	
 	@GetMapping("/id/{id}")

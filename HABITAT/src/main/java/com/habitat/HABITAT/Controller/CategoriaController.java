@@ -25,14 +25,9 @@ public class CategoriaController {
 	@Autowired
 	private com.habitat.HABITAT.Repositories.CategoriaRepository repository;
 
-	@GetMapping("/todos")
-	public ResponseEntity<List<Categoria>> buscarTodos() {
-		List<Categoria> listaCategoria = repository.findAll();
-		if (listaCategoria.isEmpty()) {
-			return ResponseEntity.status(204).build();
-		} else {
-			return ResponseEntity.status(200).body(listaCategoria);
-		}
+	@GetMapping
+	public ResponseEntity<List<Categoria>> GetAll() {
+		return ResponseEntity.ok(repository.findAll());
 	}
 
 	@GetMapping("/id/{id}")
