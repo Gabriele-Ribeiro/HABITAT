@@ -11,7 +11,6 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.Email;
@@ -19,7 +18,6 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import com.habitat.HABITAT.model.util.Tipo;
-
 
 @Entity
 @Table(name = "usuario")
@@ -45,10 +43,9 @@ public class Usuario {
 	@Size(min = 5, max = 100)
 	private String senha;
 
-	@OneToMany(cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
-	@JoinColumn(name = "fk_produto")
+	@OneToMany(mappedBy = "criador", cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
 	private List<Produto> produtosCriados = new ArrayList<>();
-	
+
 	public List<Produto> getProdutosCriados() {
 		return produtosCriados;
 	}
