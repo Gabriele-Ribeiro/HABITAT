@@ -8,9 +8,10 @@ import org.springframework.stereotype.Repository;
 import com.habitat.HABITAT.model.Produto;
 
 @Repository
-public interface ProdutoRepository extends JpaRepository <Produto, Long>{ 
-	
-	public List <Produto> findAllByNomeProdutoContainingIgnoreCase(String nomeProduto);
-	public List <Produto> findAllByPreco(double preco);
+public interface ProdutoRepository extends JpaRepository<Produto, Long> {
+
+	public List<Produto> findAllByNomeProdutoContainingIgnoreCase(String nomeProduto);
+
+	public List<Produto> findAllByPreco(double preco);
 
 }

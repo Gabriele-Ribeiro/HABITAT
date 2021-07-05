@@ -15,15 +15,15 @@ public class Categoria {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
-	
+
 	@NotNull
 	@Size(min = 5, max = 100)
 	private String tipoProduto;
-	
+
 	@NotNull
 	@Size(min = 5, max = 100)
 	private String recomendacoes;
-	
+
 	@NotNull
 	@Size(min = 5, max = 100)
 	private String marcas;
@@ -58,5 +58,5 @@ public class Categoria {
 
 	public void setMarcas(String marcas) {
 		this.marcas = marcas;
-}
+	}
 }

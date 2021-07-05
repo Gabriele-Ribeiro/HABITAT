@@ -21,25 +21,25 @@ import com.habitat.HABITAT.model.Usuario;
 @RequestMapping("/usuario")
 @CrossOrigin("*")
 public class UsuarioController {
-	
+
 	@Autowired
 	private com.habitat.HABITAT.Repositories.UsuarioRepository repository;
-	
+
 	@GetMapping("/todos")
 	public ResponseEntity<List<Usuario>> GetAll() {
 		return ResponseEntity.ok(repository.findAll());
 	}
-	
+
 	@GetMapping("/id/{id}")
 	public ResponseEntity<Usuario> buscarId(@PathVariable long id) {
 		return repository.findById(id).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
 	}
-	
+
 	@GetMapping("/nome/{nome}")
 	public ResponseEntity<List<Usuario>> buscarNome(@PathVariable String nome) {
 		return ResponseEntity.ok(repository.findByNomeContainingIgnoreCase(nome));
 	}
-	
+
 	@GetMapping("/email/{email}")
 	public ResponseEntity<List<Usuario>> buscarEmail(@PathVariable String email) {
 		return ResponseEntity.ok(repository.findByEmail(email));
@@ -51,12 +51,12 @@ public class UsuarioController {
 	}
 
 	@PutMapping
-	public ResponseEntity<Usuario> putUsuario (@RequestBody Usuario usuario){
+	public ResponseEntity<Usuario> putUsuario(@RequestBody Usuario usuario) {
 		return ResponseEntity.status(HttpStatus.OK).body(repository.save(usuario));
 	}
-	
-	@DeleteMapping ("/id/{id}")
-    public void deletarUsuario (@PathVariable long id) {
-        repository.deleteById(id);
-    }
+
+	@DeleteMapping("/id/{id}")
+	public void deletarUsuario(@PathVariable long id) {
+		repository.deleteById(id);
+	}
 }

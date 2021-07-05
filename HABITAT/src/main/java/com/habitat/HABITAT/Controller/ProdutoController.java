@@ -15,14 +15,13 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.habitat.HABITAT.model.Categoria;
 import com.habitat.HABITAT.model.Produto;
 
 @RestController
 @RequestMapping("/produto")
 @CrossOrigin("*")
 public class ProdutoController {
-	
+
 	@Autowired
 	private com.habitat.HABITAT.Repositories.ProdutoRepository repository;
 
@@ -30,12 +29,10 @@ public class ProdutoController {
 	public ResponseEntity<List<Produto>> GetAll() {
 		return ResponseEntity.ok(repository.findAll());
 	}
-	
+
 	@GetMapping("/id/{id}")
 	public ResponseEntity<Produto> buscarId(@PathVariable long id) {
-		return repository.findById(id)
-				.map(resp -> ResponseEntity.ok(resp))
-				.orElse(ResponseEntity.notFound().build());
+		return repository.findById(id).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
 	}
 
 	@GetMapping("/nomeProduto/{nomeProduto}")
@@ -47,19 +44,19 @@ public class ProdutoController {
 	public ResponseEntity<List<Produto>> buscarPreco(@PathVariable double preco) {
 		return ResponseEntity.ok(repository.findAllByPreco(preco));
 	}
-	
+
 	@PostMapping
-	public ResponseEntity<Produto> postProduto (@RequestBody Produto produto){
+	public ResponseEntity<Produto> postProduto(@RequestBody Produto produto) {
 		return ResponseEntity.status(HttpStatus.OK).body(repository.save(produto));
 	}
-	
+
 	@PutMapping
-	public ResponseEntity<Produto> putCategoria (@RequestBody Produto produto){
-		return ResponseEntity.status(HttpStatus.OK).body(produto);
+	public ResponseEntity<Produto> putProduto(@RequestBody Produto produto) {
+		return ResponseEntity.status(HttpStatus.OK).body(repository.save(produto));
 	}
-	
-	@DeleteMapping ("/id/{id}")
-		public void deletarProduto (@PathVariable long id) {
+
+	@DeleteMapping("/id/{id}")
+	public void deletarProduto(@PathVariable long id) {
 		repository.deleteById(id);
 	}
 }
