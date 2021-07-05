@@ -14,6 +14,7 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.habitat.HABITAT.model.util.TipoPagamento;
 
 @Entity
@@ -35,6 +36,7 @@ public class Produto {
 
 	@NotNull
 	private double preco;
+
 	@Enumerated(EnumType.STRING)
 	private TipoPagamento tipoPagamento;
 
@@ -44,6 +46,7 @@ public class Produto {
 
 	@ManyToOne(cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
 	@JoinColumn(name = "fk_usuario")
+	@JsonIgnoreProperties({"produtosCriados"})
 	private Usuario criador;
 
 	public Usuario getCriador() {
