@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-
+import com.habitat.HABITAT.model.Categoria;
 import com.habitat.HABITAT.model.Produto;
 
 @RestController
@@ -26,6 +26,10 @@ public class ProdutoController {
 	@Autowired
 	private com.habitat.HABITAT.Repositories.ProdutoRepository repository;
 
+	@GetMapping("/todos")
+	public ResponseEntity<List<Produto>> GetAll() {
+		return ResponseEntity.ok(repository.findAll());
+	}
 	
 	@GetMapping("/id/{id}")
 	public ResponseEntity<Produto> buscarId(@PathVariable long id) {

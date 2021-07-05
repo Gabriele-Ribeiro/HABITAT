@@ -25,7 +25,7 @@ public class CategoriaController {
 	@Autowired
 	private com.habitat.HABITAT.Repositories.CategoriaRepository repository;
 
-	@GetMapping
+	@GetMapping("/todos")
 	public ResponseEntity<List<Categoria>> GetAll() {
 		return ResponseEntity.ok(repository.findAll());
 	}

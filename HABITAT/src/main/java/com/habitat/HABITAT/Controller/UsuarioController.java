@@ -25,7 +25,7 @@ public class UsuarioController {
 	@Autowired
 	private com.habitat.HABITAT.Repositories.UsuarioRepository repository;
 	
-	@GetMapping
+	@GetMapping("/todos")
 	public ResponseEntity<List<Usuario>> GetAll() {
 		return ResponseEntity.ok(repository.findAll());
 	}
