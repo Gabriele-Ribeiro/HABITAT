@@ -6,11 +6,10 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import com.habitat.HABITAT.model.Categoria;
+import com.habitat.HABITAT.model.Usuario;
 
 @Repository
 public interface CategoriaRepository extends JpaRepository <Categoria, Long>{
-
-	List<Categoria> findAll();
 
 	public List <Categoria> findAllByMarcasContainingIgnoreCase(String marcas);
 	public List <Categoria> findAllByTipoProdutoContainingIgnoreCase(String tipoProduto);
