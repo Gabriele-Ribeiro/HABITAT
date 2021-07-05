@@ -11,7 +11,7 @@ import com.habitat.HABITAT.model.Usuario;
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, Long>{
 
-	public List<Usuario> findByNome(String nome);
+	public List<Usuario> findByNomeContainingIgnoreCase(String nome);
 
 	public List<Usuario> findByEmail(String email);
 
