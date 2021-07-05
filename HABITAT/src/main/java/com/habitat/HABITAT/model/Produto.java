@@ -14,49 +14,44 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-
 import com.habitat.HABITAT.model.util.TipoPagamento;
 
 @Entity
-@Table (name = "Produto")
+@Table(name = "Produto")
 
 public class Produto {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
-	
-	
-	@NotNull 
-	@Size (min = 5, max = 100)
-	private String nomeProduto;
-	
+
 	@NotNull
-	@Size (min = 10, max = 500)
-	private String descricao; 
-	
+	@Size(min = 5, max = 100)
+	private String nomeProduto;
+
+	@NotNull
+	@Size(min = 10, max = 500)
+	private String descricao;
 
 	@NotNull
 	private double preco;
-	
 	@Enumerated(EnumType.STRING)
 	private TipoPagamento tipoPagamento;
-	
+
 	@ManyToOne(cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
 	@JoinColumn(name = "fk_categoria")
 	private Categoria tipoMercadoria;
-	
+
 	@ManyToOne(cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
 	@JoinColumn(name = "fk_usuario")
-	private Categoria protudosCriados;
+	private Usuario criador;
 
-	
-	public Categoria getProtudosCriados() {
-		return protudosCriados;
+	public Usuario getCriador() {
+		return criador;
 	}
 
-	public void setProtudosCriados(Categoria protudosCriados) {
-		this.protudosCriados = protudosCriados;
+	public void setCriador(Usuario criador) {
+		this.criador = criador;
 	}
 
 	public Categoria getTipoMercadoria() {
@@ -105,13 +100,6 @@ public class Produto {
 
 	public void setTipoPagamento(TipoPagamento tipoPagamento) {
 		this.tipoPagamento = tipoPagamento;
-	} 
-	
-	
-	
-
-	
-	
-	
+	}
 
 }
