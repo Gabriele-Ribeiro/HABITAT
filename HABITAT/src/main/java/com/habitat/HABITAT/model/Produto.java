@@ -1,14 +1,19 @@
 package com.habitat.HABITAT.model;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+
 
 import com.habitat.HABITAT.model.util.TipoPagamento;
 
@@ -36,8 +41,32 @@ public class Produto {
 	
 	@Enumerated(EnumType.STRING)
 	private TipoPagamento tipoPagamento;
+	
+	@ManyToOne(cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
+	@JoinColumn(name = "fk_categoria")
+	private Categoria tipoMercadoria;
+	
+	@ManyToOne(cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
+	@JoinColumn(name = "fk_usuario")
+	private Categoria protudosCriados;
 
 	
+	public Categoria getProtudosCriados() {
+		return protudosCriados;
+	}
+
+	public void setProtudosCriados(Categoria protudosCriados) {
+		this.protudosCriados = protudosCriados;
+	}
+
+	public Categoria getTipoMercadoria() {
+		return tipoMercadoria;
+	}
+
+	public void setTipoMercadoria(Categoria tipoMercadoria) {
+		this.tipoMercadoria = tipoMercadoria;
+	}
+
 	public long getId() {
 		return id;
 	}
