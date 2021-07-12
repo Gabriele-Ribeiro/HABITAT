@@ -1,6 +1,7 @@
 package com.habitat.HABITAT.Controller;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -15,7 +16,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.habitat.HABITAT.Service.UsuarioService;
 import com.habitat.HABITAT.model.Usuario;
+import com.habitat.HABITAT.model.UsuarioLogin;
 
 @RestController
 @RequestMapping("/usuario")
@@ -24,6 +27,9 @@ public class UsuarioController {
 
 	@Autowired
 	private com.habitat.HABITAT.Repositories.UsuarioRepository repository;
+
+	@Autowired
+	private UsuarioService usuarioService;
 
 	@GetMapping("/todos")
 	public ResponseEntity<List<Usuario>> GetAll() {
@@ -41,13 +47,21 @@ public class UsuarioController {
 	}
 
 	@GetMapping("/email/{email}")
-	public ResponseEntity<List<Usuario>> buscarEmail(@PathVariable String email) {
+	public ResponseEntity<Optional<Usuario>> buscarEmail(@PathVariable String email) {
 		return ResponseEntity.ok(repository.findByEmail(email));
 	}
 
-	@PostMapping
-	public ResponseEntity<Usuario> postUsuario(@RequestBody Usuario usuario) {
-		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(usuario));
+	@PostMapping("/cadastrar")
+	public ResponseEntity<Usuario> postCadastrar(@RequestBody Usuario usuario) {
+		return ResponseEntity.status(HttpStatus.CREATED).body(usuarioService.CadastrarUsuario(usuario));
+
+	}
+
+	@PostMapping("/logar")
+	public ResponseEntity<UsuarioLogin> postLogin(@RequestBody Optional<UsuarioLogin> usuario) {
+		return usuarioService.Logar(usuario).map(resp -> ResponseEntity.ok(resp))
+				.orElse(ResponseEntity.status(HttpStatus.UNAUTHORIZED).build());
+
 	}
 
 	@PutMapping
