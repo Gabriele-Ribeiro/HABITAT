@@ -2,7 +2,7 @@
 Projeto desenvolvido por alunos da turma 24, do curso Generation. 
 
 <p align="center">
-  <img width="460" height="300" src="https://user-images.githubusercontent.com/69607844/124311424-1ca88f80-db44-11eb-80a0-7b0f5debc2b9.jpg">
+  <img width="500" height="500" src="https://user-images.githubusercontent.com/69607844/124311424-1ca88f80-db44-11eb-80a0-7b0f5debc2b9.jpg">
 </p>
 
 Habitat se trata de um Marketplace que une pequenas e médias empresas que possuem um propósito sustentável, podendo partir de qualquer segmento, seja ele alimentício, saúde e beleza, etc. 
