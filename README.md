@@ -38,16 +38,17 @@ De acordo com o dicionário habitat significa um conjunto de circunstâncias fí
 ----------------------------------------------------------------------------------------------------------------------------------------------
 <table>
 
- <td align="center"><a href="https://www.linkedin.com/in/felipe-giacomelli-997a8b19b/%22%3E<img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/69607844?v=4" width="100px;" alt="Felipe"/><br /><sub><b>Felipe Giacomelli (Fe)</b></sub></a><br /><a href="https://github.com/fegiacomelli" title="Desenvolvedor FullStack Java Jr.">:octocat:</a></td> 
-
- <td align="center"><a href="https://www.linkedin.com/in/gabriele-ribeiro-7b739a166/%22%3E<img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/85172727?v=4" width="100px;" alt="Gabriele"/><br /><sub><b>Gabriele Ribeiro (Gabi)</b></sub></a><br /><a href="https://github.com/Gabriele-Ribeiro" title="Desenvolvedor FullStack Java Jr.">:octocat:</a></td> 
-
- <td align="center"><a href="https://www.linkedin.com/in/maria-eduarda-pinheiro-feitosa-652220186/%22%3E<img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/85180010?v=4" width="100px;" alt="Zinha"/><br /><sub><b>Maria Eduarda Pinheiro Feitosa (Zinha)</b></sub></a><br /><a href="https://github.com/devzinha" title="Desenvolvedor FullStack Java Jr.">:octocat:</a></td> 
-
- <td align="center"><a href="https://www.linkedin.com/in/nadya-fernanda-da-silva-3576441b3/%22%3E<img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/84246183?v=4" width="100px;" alt="Nadya"/><br /><sub><b>Nadya Fernanda</b></sub></a><br /><a href="https://github.com/nadyafsilva" title="Desenvolvedor FullStack Java Jr.">:octocat:</a></td> 
-
- <td align="center"><a href="https://www.linkedin.com/in/thomazfranca01/%22%3E<img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/75401213?v=4" width="100px;" alt="Thomaz França"/><br /><sub><b>Thomaz França(Thom)</b></sub></a><br /><a href="https://github.com/thomazfranca" title="Desenvolvedor FullStack Java Jr.">:octocat:</a></td> 
+ <td align="center"><a href="https://www.linkedin.com/in/felipe-giacomelli-997a8b19b/"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/69607844?v=4" width="100px;" alt="Felipe"/><br /><sub><b>Felipe Giacomelli (Fe)</b></sub></a><br /><a href="https://github.com/fegiacomelli" title="Desenvolvedor FullStack Java Jr.">:octocat:</a></td> 
+   
+ <td align="center"><a href="https://www.linkedin.com/in/gabriele-ribeiro-7b739a166/"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/85172727?v=4" width="100px;" alt="Gabriele"/><br /><sub><b>Gabriele (Gabi)</b></sub></a><br /><a href="https://github.com/Gabriele-Ribeiro" title="Desenvolvedor FullStack Java Jr.">:octocat:</a></td> 
+   
+ <td align="center"><a href="https://www.linkedin.com/in/maria-eduarda-pinheiro-feitosa-652220186/"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/85180010?v=4" width="100px;" alt="Zinha"/><br /><sub><b>Maria Eduarda Pinheiro Feitosa (Zinha)</b></sub></a><br /><a href="https://github.com/devzinha" title="Desenvolvedor FullStack Java Jr.">:octocat:</a></td> 
+   
+ <td align="center"><a href="https://www.linkedin.com/in/nadya-fernanda-da-silva-3576441b3/"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/84246183?v=4" width="100px;" alt="Nadya"/><br /><sub><b>Nadya Fernanda</b></sub></a><br /><a href="https://github.com/nadyafsilva" title="Desenvolvedor FullStack Java Jr.">:octocat:</a></td> 
+   
+ <td align="center"><a href="https://www.linkedin.com/in/thomazfranca01/"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/75401213?v=4" width="100px;" alt="Thomaz França"/><br /><sub><b>Thomaz França(Thom)</b></sub></a><br /><a href="https://github.com/thomazfranca" title="Desenvolvedor FullStack Java Jr.">:octocat:</a></td> 
 
   </table>
+
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
