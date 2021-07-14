@@ -1,4 +1,6 @@
 # HABITAT
+[![Stargazers][stars-shield]][stars-url]
+
 Projeto desenvolvido por alunos da turma 24, do curso Generation. 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
@@ -52,5 +54,7 @@ De acordo com o dicionário Habitat significa um conjunto de circunstâncias fí
 
   </table>
 
+[stars-shield]:  https://img.shields.io/github/stars/Gabriele-Ribeiro/HABITAT?style=social
+[stars-url]: https://github.com/Gabriele-Ribeiro/HABITAT/stargazers
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
