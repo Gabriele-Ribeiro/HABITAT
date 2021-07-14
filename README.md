@@ -1,5 +1,6 @@
 # HABITAT
 [![Stargazers][stars-shield]][stars-url]
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 Seu buscador sustentável!
 
