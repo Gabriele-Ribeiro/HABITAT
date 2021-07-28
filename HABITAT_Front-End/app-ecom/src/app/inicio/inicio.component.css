@@ -6,11 +6,19 @@
 .textCar
 {
   color: rgba(191, 166, 107, 1)
-
-
 }
 .imgCar
 {
   width: 350px;
-  height: 800px;
+  height: 600px;
+}
+
+h3{
+  color: white;
+  text-shadow:3px 3px 5px black;
+}
+
+p{
+  color: white;
+  text-shadow:2px 2px 5px black;
 }
