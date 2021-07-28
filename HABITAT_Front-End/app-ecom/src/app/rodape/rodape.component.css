@@ -1,0 +1,36 @@
+.fotBg
+{
+  background-color: #BFA66B;
+}
+ul.social-network{
+  list-style: none;
+  padding: 0;
+}
+ul.social-network li{
+  display: inline;
+  margin: 0;
+  padding: 5px;
+}
+.fab{
+  font-size: 35pt;
+  color: white;
+  padding: 10px;
+}
+.fa-facebook-f:hover{
+  color: rgba(72, 213, 5, 0.39);
+
+}
+.fa-instagram:hover{
+  color: rgba(72, 213, 5, 0.39);
+}
+
+
+.fa-google-play:hover{
+  color: rgba(72, 213, 5, 0.39);
+}
+
+.fa-envelope:hover{
+  color: rgba(72, 213, 5, 0.39);
+}
+
+
