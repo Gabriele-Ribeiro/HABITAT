@@ -1,128 +1,52 @@
-
 .bg {
 	height: 100%;
 	display: grid;
 	background-color: #74b484;
-	overflow: hidden;
 }
-.pool {
-	background-color: #2e2f34;
-	width: 1000px;
-	height: 500px;
-	position: absolute;
-	display: block;
-	transform: rotate(-30deg);
-	top: -500px;
-	left: -350px;
-	border: 70px solid #cacaca;
-}
+
 .sign {
 	color: white;
 	margin: auto;
 	position: relative;
 	padding: 1em;
 	background-color: #BFA66B;
-	border-radius: 7px;
-	transform: skewY(-10deg);
-	z-index: 1;
+	border-radius: 40px;
+	transform: skewY(-3deg);
 	font-family: 'Carrois Gothic', sans-serif;
-	width: 500px;
-	font-size: 50px;
+	width: 400px;
+	height: 400px;
+	font-size: 10px;
 	text-align: center;
 	box-shadow: gray -5px -5px;
 	top: 25%;
 	text-transform: uppercase;
 }
-ol {
-	list-style: none;
-	padding: 0px;
-}
-.stick {
-	margin: auto;
-	padding: 0.5em;
-	background-color: #b88c77;
-	max-width: 50px;
-	height: 200px;
-	transform: skewY(-10deg);
-	top: -100px;
-	position: relative;
-	z-index: 0;
-	box-shadow: #582828 -5px -5px;
-}
-
-.sign:before {
-	content: "";
-	width: 0;
-	height: 0;
-	border-left: 20px solid transparent;
-	border-right: 20px solid transparent;
-	border-top: 20px solid #74b484;
-	position: absolute;
-	top: -07px;
-	left: 20px;
-}
-
-.sign:after {
-	content: "";
-	width: 1px;
-	height: 0;
-	border-left: 0px solid red;
-	border-right: 4px solid transparent;
-	border-top: 20px solid gray;
-	border-bottom: 0px solid green;
-	position: absolute;
-	transform: rotate(42deg);
-	top: -05px;
-	left: 46px;
-}
-
-.sign h2,
-.sign h3 {
-	text-align: center;
-	line-height: 10px;
-	transform: skewY(-2deg);
-	opacity: 0.8;
-	color: brown;
-	font-family: "Coming Soon", cursive;
-	font-size: 15px;
-}
 
 .sign h1 {
 	text-align: center;
 	color: white;
-	font-family: "Coming Soon", cursive;
+	font-family: 'Carrois Gothic', sans-serif; 
 	line-height: 15px;
-
 }
 
-.sign h2 {
-	padding-top: 10px;
+button:hover{
+	color: gray;
 }
 
-.stick:after {
-	content: "";
-	width: 1px;
-	height: 0;
-	border-left: 3px solid transparent;
-	border-right: 3px solid transparent;
-	border-top: 20px solid transparent;
-	border-bottom: 5px solid #582828;
-	position: absolute;
-
-	transform: rotate(42deg);
-	bottom: 0px;
-	left: 1px;
-}
-img{
-  width: 50px;
-	height:50px;
-	margin-left:50px;
-	margin-top:10px;
+.font{
+	font-family: 'Carrois Gothic', sans-serif;
+	font-size: 20px;
 }
 
-.a1{
-	transform: skewY(-5deg);
-	position:absolute;
-	bottom:13%;
-	right:49%;
+.fontA{
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 15px;
+}
+
+.fontB{
+	color: white;
+}
+
+.fontB:hover{
+	color: gray;
 }

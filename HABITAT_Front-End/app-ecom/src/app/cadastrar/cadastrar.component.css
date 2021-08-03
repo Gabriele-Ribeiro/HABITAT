@@ -1,0 +1,43 @@
+.bg{
+    height: 100%;
+	display: grid;
+    background-color: #74b484;
+}
+
+.sign {
+	color: white;
+	margin: auto;
+	position: relative;
+	padding: 1em;
+	background-color: #BFA66B;
+	border-radius: 40px;
+	transform: skewY(-3deg);
+	font-family: 'Carrois Gothic', sans-serif;
+	width: 600px;
+	height: 600px;
+	font-size: 10px;
+	text-align: center;
+	box-shadow: gray -5px -5px;
+	top: 25%;
+	text-transform: uppercase;
+}
+
+h3 {
+	text-align: center;
+	color: white;
+	font-family: 'Carrois Gothic', sans-serif; 
+	line-height: 15px;
+}
+
+button:hover{
+	color: gray;
+}
+
+.font{
+	font-family: 'Carrois Gothic', sans-serif;
+	font-size: 15px;
+}
+
+.fontC{
+    color: gray;
+}

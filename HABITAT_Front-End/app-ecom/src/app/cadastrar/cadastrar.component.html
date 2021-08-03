@@ -1,44 +1,55 @@
-<div class="col-6 p-5 text-white background2 d-flex flex-column align-content-center">
-    <h3 class="text-center">Cadastro</h3>
+<div class="bg">
 
-    <div class="form-group mb-2">
-        <label for="nome">Nome</label>
-        <input [(ngModel)]='user.nome'class="form-control  btn-light" type="text" name="nome" id="nome" placeholder="Seu nome">
-      </div>
+  <div class="container-fluid">
 
-      <div class="form-group mb-2 mt-2">
-        <label for="email">Email</label>
-        <input [(ngModel)]='user.email' class="form-control  btn-light" type="text" name="email" id="email" placeholder="Seu email">
-      </div>
+    <div class="sign">
 
-      <div class="form-group mb-2 mt-2">
-        <label for="foto">Link da Foto</label>
-        <input [(ngModel)]='user.foto' class="form-control  btn-light" type="text" name="foto" id="foto" placeholder="Link da sua foto">
-      </div>
+      <form class="p-5">
+        <h3 class="text-center">Cadastro</h3>
 
-      <div class="form-group mb-2 mt-2">
-        <label for="senha">Senha</label>
-        <input (input)='confirmSenha($event)' class="form-control  btn-light" type="password" name="senha" id="senha" placeholder="Sua senha">
-      </div>
+         <div class="form-group mb-2">
+            <label for="nome" class = "font d-flex justify-content-left">Nome</label>
+            <input [(ngModel)]='user.nome'class="form-control  btn-light" type="text" name="nome" id="nome" placeholder="Seu nome">
+         </div>
 
-      <div class="form-group mb-2 mt-2">
-        <label for="confirmSenha">Confirmar Senha</label>
-        <input [(ngModel)]='user.senha' class="form-control  btn-light" type="password" name="confirmSenha" id="confirmSenha"
-          placeholder="Confirme sua senha">
-      </div>
+          <div class="form-group mb-2 mt-2">
+            <label for="email" class = "font d-flex justify-content-left">Email</label>
+            <input [(ngModel)]='user.email' class="form-control  btn-light" type="text" name="email" id="email" placeholder="Seu email">
+          </div>
 
-      <div class="form-group">
-        <label for="tipo">Tipo de Usuário</label>
-        <select class="form-control" name="tipo" id="tipo" (change)='tipoUser($event)' >
-          <option>Selecione um tipo de usuário:</option>
-          <option value="COMPRADOR">Comprador</option>
-          <option value="VENDEDOR">Vendedor</option>
-        </select>
-      </div>
+          <div class="form-group mb-2 mt-2">
+            <label for="foto" class = "font d-flex justify-content-left">Link da Foto</label>
+             <input [(ngModel)]='user.foto' class="form-control  btn-light" type="text" name="foto" id="foto" placeholder="Link da sua foto">
+          </div>
 
-      <div class="d-flex justify-content-between mt-5">
-        <button type="submit" class="btn btn-dark mr-4 " routerLink='/logar'>Cancelar</button>
-        <button type="submit" class="btn btn-dark " (click)='cadastrar()'>Cadastrar</button>
-      </div>
+          <div class="form-group mb-2 mt-2">
+            <label for="senha" class = "font d-flex justify-content-left">Senha</label>
+             <input (input)='confirmSenha($event)' class="form-control  btn-light" type="password" name="senha" id="senha" placeholder="Sua senha">
+          </div>
 
-</div>
+          <div class="form-group mb-2 mt-2">
+             <label for="confirmSenha" class = "font d-flex justify-content-left">Confirmar Senha</label>
+             <input [(ngModel)]='user.senha' class="form-control  btn-light" type="password" name="confirmSenha" id="confirmSenha"
+               placeholder="Confirme sua senha">
+         </div>
+
+         <div class="form-group">
+            <label for="tipo" class = "font d-flex justify-content-left">Tipo de Usuário</label>
+           <select class="form-control fontC" name="tipo" id="tipo" (change)='tipoUser($event)' >
+              <option>Selecione um tipo de usuário:</option>
+               <option value="COMPRADOR">Comprador</option>
+               <option value="VENDEDOR">Vendedor</option>
+            </select>
+         </div>
+
+        <div class="d-flex justify-content-center mt-5">
+           <button type="submit" class="btn btn-outline-light me-5 " routerLink='/logar'>Cancelar</button>
+          <button type="submit" class="btn btn-outline-light " (click)='cadastrar()'>Cadastrar</button>
+        </div>
+
+      </form>
+     </div>
+    </div>
+  </div>
+
+
