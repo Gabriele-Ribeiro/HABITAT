@@ -36,7 +36,7 @@ public class Categoria {
 	private String marcas;
 
 	@OneToMany(mappedBy = "tipoMercadoria", cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
-	@JsonIgnoreProperties({"produto"})
+	@JsonIgnoreProperties({"produtosCriados"})
 	private List<Produto> produtosCriados = new ArrayList<>();
 
 	public List<Produto> getProdutosCriados() {
