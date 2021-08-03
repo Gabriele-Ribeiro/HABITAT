@@ -1,37 +1,52 @@
- 
-<nav class="navbar navbar-expand-lg navbar-dark navBg d-flex align-content-end flex-wrap">
-  <div class="row">
+<div class="container-fluid">
+<div class="row">
    <div class="navBg fs-1 me-5">
-    <p class="text-center">HABITAT</p> 
+    <p class="text-light d-flex justify-content-center font mt-md-5">HABITAT</p> 
    </div>
   </div>
-  <div class="container-fluid py-5">
+</div>
+  <nav class="navbar navbar-expand-lg navbar-dark navBg mt-n1">
+    <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Menu
+          <a class="nav-link me-2" href="#" id="navbarDropdown" role="button" 
+          data-bs-toggle="dropdown" aria-expanded="false" >
+          <i class="fa fa-bars mt-md-2" aria-hidden="true"></i>
           </a>
           <ul class="dropdown-menu navBg1" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Item 1</a></li>
-            <li><a class="dropdown-item" href="#">Item 2</a></li>
-            <li><a class="dropdown-item" href="#">Item 3</a></li>
-            <li><a class="dropdown-item" href="#">Item 4</a></li>
-            <li><a class="dropdown-item" href="#">Item 5</a></li>
-            <li><a class="dropdown-item" href="#">Item 6</a></li>
+            <li><a class="dropdown-item text-light BgH" href="#">Vegano</a></li>
+            <li><a class="dropdown-item text-light BgH" href="#">Alimentício</a></li>
+            <li><a class="dropdown-item text-light BgH" href="#">Roupas</a></li>
+            <li><a class="dropdown-item text-light BgH" href="#">Acessórios</a></li>
+            <li><a class="dropdown-item text-light BgH" href="#">Beleza</a></li>
+            <li><a class="dropdown-item text-light BgH" href="#">Higiene</a></li>
           </ul>
         </li>
+        
         <li class="nav-item">
-          <a routerLink='/inicio' class="nav-link active" aria-current="page" href="#">Home</a>
+          <i routerLink='/inicio' class="fa fa-home mt-md-3" aria-hidden="true"></i>
         </li>
       </ul>
+
       <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <input class="form-control pesquisa btn btn-light me-2 mt-md-2" type="search" aria-label="Search">
+        <i class="fa fa-search mt-md-3" aria-hidden="true"></i>
       </form>
+
+      <ul class="mt-md-4">
+        <i class="fas fa-shopping-basket fa"></i>
+      </ul>
+
+      <ul class="mt-md-4">
+        <i class="fa fa-user-circle" aria-hidden="true"></i>
+      </ul>
+        
+     
+
     </div>
   </div>
 </nav>

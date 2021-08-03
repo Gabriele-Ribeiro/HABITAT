@@ -12,25 +12,36 @@ ul.social-network li{
   padding: 5px;
 }
 .fab{
-  font-size: 35pt;
+  font-size: 20pt;
   color: white;
-  padding: 10px;
+  padding: 5px;
 }
-.fa-facebook-f:hover{
-  color: rgba(72, 213, 5, 0.39);
-
-}
-.fa-instagram:hover{
+.fab:hover{
   color: rgba(72, 213, 5, 0.39);
 }
 
+.fontR{
+  font-family: 'Carrois Gothic', sans-serif;
+  font-size: 20px;
+  letter-spacing: 15px;
+  color: white;
+} 
 
-.fa-google-play:hover{
+.fontD{
+  font-family: 'Carrois Gothic', sans-serif;
+  font-size: 20px;
+  letter-spacing: 5px;
+  color: white;
+}
+
+.fontD:hover{
   color: rgba(72, 213, 5, 0.39);
 }
 
-.fa-envelope:hover{
-  color: rgba(72, 213, 5, 0.39);
+.mt-n1 {
+  margin-top: -1rem !important;
 }
+
+
 
 

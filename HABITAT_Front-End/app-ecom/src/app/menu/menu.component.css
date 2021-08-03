@@ -1,15 +1,41 @@
 .navBg
 {
   background-color: #BFA66B;
-  
 }
 
-.navBg1
-{
-  background-color:rgba(191, 166, 107, 0.5);
-  
+.navBg1{
+  background-color: #BFA66B;
 }
 
-.text1{
- text-align: center;
+.BgH:hover{
+  background-color: rgba(72, 213, 5, 0.39);
+}
+
+.pesquisa{
+  background-color: rgba(191, 166, 107, 0.5);
+  color: white;
+  border: none;
+}
+
+.font{
+  font-family: 'Carrois Gothic', sans-serif;
+  letter-spacing: 20px;
+} 
+.fa{
+  color: white;
+}
+.fa-home{
+  font-size: 20px;
+}
+
+.fa-bars{
+  font-size: 20px;
+}
+
+.fa:hover{
+  color: rgba(72, 213, 5, 0.39);
+}
+
+.mt-n1 {
+  margin-top: -1,25rem !important;
 }
