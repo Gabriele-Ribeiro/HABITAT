@@ -41,12 +41,13 @@ public class Produto {
 	private TipoPagamento tipoPagamento;
 
 	@ManyToOne(cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
+	@JsonIgnoreProperties({"produto"})
 	@JoinColumn(name = "fk_categoria")
 	private Categoria tipoMercadoria;
 
 	@ManyToOne(cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
 	@JoinColumn(name = "fk_usuario")
-	@JsonIgnoreProperties({"produtosCriados"})
+	@JsonIgnoreProperties({"produto"})
 	private Usuario criador;
 
 	public Usuario getCriador() {

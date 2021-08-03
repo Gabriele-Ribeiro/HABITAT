@@ -17,6 +17,7 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.habitat.HABITAT.model.util.Tipo;
 
 @Entity
@@ -42,8 +43,11 @@ public class Usuario {
 	@NotNull
 	@Size(min = 5, max = 100)
 	private String senha;
+	
+	private String foto;
 
 	@OneToMany(mappedBy = "criador", cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
+	@JsonIgnoreProperties({"produtosCriados"})
 	private List<Produto> produtosCriados = new ArrayList<>();
 
 	public List<Produto> getProdutosCriados() {
@@ -94,4 +98,11 @@ public class Usuario {
 		this.tipo = tipo;
 	}
 
+	public String getFoto() {
+		return foto;
+	}
+
+	public void setFoto(String foto) {
+		this.foto = foto;
+	}
 }

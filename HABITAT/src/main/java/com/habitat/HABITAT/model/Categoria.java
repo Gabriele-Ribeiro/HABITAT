@@ -13,7 +13,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.Size;
 
-
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.sun.istack.NotNull;
 
 @Entity
@@ -36,6 +36,7 @@ public class Categoria {
 	private String marcas;
 
 	@OneToMany(mappedBy = "tipoMercadoria", cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
+	@JsonIgnoreProperties({"produto"})
 	private List<Produto> produtosCriados = new ArrayList<>();
 
 	public List<Produto> getProdutosCriados() {
