@@ -3,17 +3,17 @@
 
     <div class="form-group mb-2">
         <label for="nome">Nome</label>
-        <input [(ngModel)]='usuario.nome'class="form-control  btn-light" type="text" name="nome" id="nome" placeholder="Seu nome">
+        <input [(ngModel)]='user.nome'class="form-control  btn-light" type="text" name="nome" id="nome" placeholder="Seu nome">
       </div>
 
       <div class="form-group mb-2 mt-2">
         <label for="email">Email</label>
-        <input [(ngModel)]='usuario.email' class="form-control  btn-light" type="text" name="email" id="email" placeholder="Seu email">
+        <input [(ngModel)]='user.email' class="form-control  btn-light" type="text" name="email" id="email" placeholder="Seu email">
       </div>
 
       <div class="form-group mb-2 mt-2">
         <label for="foto">Link da Foto</label>
-        <input [(ngModel)]='usuario.foto' class="form-control  btn-light" type="text" name="foto" id="foto" placeholder="Link da sua foto">
+        <input [(ngModel)]='user.foto' class="form-control  btn-light" type="text" name="foto" id="foto" placeholder="Link da sua foto">
       </div>
 
       <div class="form-group mb-2 mt-2">
@@ -23,7 +23,7 @@
 
       <div class="form-group mb-2 mt-2">
         <label for="confirmSenha">Confirmar Senha</label>
-        <input [(ngModel)]='usuario.senha' class="form-control  btn-light" type="password" name="confirmSenha" id="confirmSenha"
+        <input [(ngModel)]='user.senha' class="form-control  btn-light" type="password" name="confirmSenha" id="confirmSenha"
           placeholder="Confirme sua senha">
       </div>
 
@@ -31,8 +31,8 @@
         <label for="tipo">Tipo de Usuário</label>
         <select class="form-control" name="tipo" id="tipo" (change)='tipoUser($event)' >
           <option>Selecione um tipo de usuário:</option>
-          <option value="comprador">Comprador</option>
-          <option value="vendedor">Vendedor</option>
+          <option value="COMPRADOR">Comprador</option>
+          <option value="VENDEDOR">Vendedor</option>
         </select>
       </div>
 
