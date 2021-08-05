@@ -5,6 +5,7 @@ import { BlogComponent } from './blog/blog.component';
 import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 import { LogarComponent } from './logar/logar.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
+import { ProdutoComponent } from './produto/produto.component';
 
 
 
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path:'inicio', component:InicioComponent},
   {path:'blog',component:BlogComponent},
   {path:'sobre-nos',component:SobreNosComponent},
+  {path:'produto' ,component:ProdutoComponent}
   
 ];
 
