@@ -8,20 +8,17 @@ import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { ProdutoComponent } from './produto/produto.component';
 import { CategoriaComponent } from './categoria/categoria.component';
 
-
-
 const routes: Routes = [
   {path: '', redirectTo:'logar',pathMatch:'full'},
-
 
   {path: 'logar' ,component:LogarComponent },
   {path: 'cadastrar' ,component:CadastrarComponent},
   {path:'inicio', component:InicioComponent},
   {path:'blog',component:BlogComponent},
   {path:'sobre-nos',component:SobreNosComponent},
+
   {path: 'produto', component: ProdutoComponent},
-  {path: 'categoria', component: CategoriaComponent}
-  
+  {path: 'categoria', component: CategoriaComponent} 
 ];
 
 @NgModule({
