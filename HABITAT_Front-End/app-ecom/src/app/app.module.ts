@@ -12,6 +12,8 @@ import { BlogComponent } from './blog/blog.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { LogarComponent } from './logar/logar.component';
 import { FormsModule } from '@angular/forms';
+import { ProdutoComponent } from './produto/produto.component';
+import { CategoriaComponent } from './categoria/categoria.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { FormsModule } from '@angular/forms';
     SobreNosComponent,
     BlogComponent,
     CadastrarComponent,
-    LogarComponent
+    LogarComponent,
+    ProdutoComponent,
+    CategoriaComponent
   ],
   imports: [
     BrowserModule,
