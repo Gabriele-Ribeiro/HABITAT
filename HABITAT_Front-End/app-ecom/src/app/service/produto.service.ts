@@ -30,11 +30,11 @@ export class ProdutoService {
   }
 
   deleteProduto(id: number){
-    return this.http.delete(`https://projetohabitat.herokuapp.com/produto/${id}`,this.token)
+    return this.http.delete(`https://projetohabitat.herokuapp.com/produto/id/${id}`,this.token)
   }
 
   getByIdProduto(id: number): Observable<Produto>{
-    return this.http.get<Produto>(`https://projetohabitat.herokuapp.com/produto/${id}`)
+    return this.http.get<Produto>(`https://projetohabitat.herokuapp.com/produto/id/${id}`, this.token)
   }
 
 
