@@ -42,6 +42,12 @@ ul.social-network li{
   margin-top: -1rem !important;
 }
 
+.fixarRodape {
+  bottom: 0;
+  position: fixed;
+  width: 90%;
+  text-align: center;
+}
 
 
 

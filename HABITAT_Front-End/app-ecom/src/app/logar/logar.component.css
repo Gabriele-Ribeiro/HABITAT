@@ -1,7 +1,12 @@
+body {
+	height:200px; 
+	width:100px;
+ }
+
 .bg {
 	height: 100%;
 	display: grid;
-	background-color: #74b484;
+	background-color: #B6ED9D;
 }
 
 .sign {
@@ -30,7 +35,7 @@
 }
 
 button:hover{
-	color: gray;
+	color: #B6ED9D;
 }
 
 .font{
@@ -48,5 +53,12 @@ button:hover{
 }
 
 .fontB:hover{
-	color: gray;
+	color: #B6ED9D;
+}
+
+.fixarRodape {
+	bottom: 0;
+	position: fixed;
+	width: 90%;
+	text-align: center;
 }

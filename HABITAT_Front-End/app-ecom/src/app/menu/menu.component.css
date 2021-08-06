@@ -18,8 +18,9 @@
 }
 
 .font{
-  font-family: 'Carrois Gothic', sans-serif;
+  font-family: 'Georama';
   letter-spacing: 20px;
+  color: #B7EE9E;
 } 
 .fa{
   color: white;
@@ -37,5 +38,10 @@
 }
 
 .mt-n1 {
-  margin-top: -1,25rem !important;
+  margin-top: -3rem !important;
+}
+
+.logo{
+
+  margin-top: 20px;
 }
