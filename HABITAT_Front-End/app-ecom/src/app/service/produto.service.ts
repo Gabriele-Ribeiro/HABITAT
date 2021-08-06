@@ -25,6 +25,18 @@ export class ProdutoService {
   
   }
 
+  putProduto(produto: Produto):Observable<Produto>{
+    return this.http.put<Produto>('https://projetohabitat.herokuapp.com/produto', produto, this.token)
+  }
+
+  deleteProduto(id: number){
+    return this.http.delete(`https://projetohabitat.herokuapp.com/produto/${id}`,this.token)
+  }
+
+  getByIdProduto(id: number): Observable<Produto>{
+    return this.http.get<Produto>(`https://projetohabitat.herokuapp.com/produto/${id}`)
+  }
+
 
 
 }

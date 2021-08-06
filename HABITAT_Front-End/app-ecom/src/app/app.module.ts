@@ -14,6 +14,8 @@ import { LogarComponent } from './logar/logar.component';
 import { FormsModule } from '@angular/forms';
 import { ProdutoComponent } from './produto/produto.component';
 import { CategoriaComponent } from './categoria/categoria.component';
+import { ProdutoEditComponent } from './edit/produto-edit/produto-edit.component';
+import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { CategoriaComponent } from './categoria/categoria.component';
     CadastrarComponent,
     LogarComponent,
     ProdutoComponent,
-    CategoriaComponent
+    CategoriaComponent,
+    ProdutoEditComponent,
+    ProdutoDeleteComponent
   ],
   imports: [
     BrowserModule,

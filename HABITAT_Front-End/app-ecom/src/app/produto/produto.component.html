@@ -49,7 +49,8 @@
                     <h5 class="card-title">{{produto.nomeProduto}}</h5>
                     <p class="card-text">{{produto.descricao}}</p>
                     <p>R${{produto.preco}}</p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
+                    <a class="btn btn-primary" [routerLink]="['/produto-edit', produto.id]">Editar</a>
+                    <a class="btn btn-primary" [routerLink]="['/produto-delete', produto.id]">Deletar</a>
                   </div>
                 </div> 
           </div>
