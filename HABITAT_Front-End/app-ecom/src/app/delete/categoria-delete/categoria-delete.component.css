@@ -13,9 +13,6 @@ button{
 
 button:hover{
     background-color: white;
-    color: gray;   
-}
-
-.font{
-    color: white;
+    color: gray;
+    
 }

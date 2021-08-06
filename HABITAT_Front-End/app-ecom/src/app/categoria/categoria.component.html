@@ -1,7 +1,9 @@
-  <div class="container-fluid">
+  <body>
+    
+  <div class="container paD">
 
         <div class="row">
-          <div class="col-md-12 text-white bg-danger">
+          <div class="col-md-mt-8 text-white" style="background-color: rgba(191, 166, 107, 1);">
       
             <h1 class="fs-54 text-center mt-5">Categorias</h1>
             <h5 class="fs-18 text-center">Veja aqui todas as categorias cadastradas ou cadastre uma nova:</h5>
@@ -25,20 +27,20 @@
       
       </div>
       
-      <div class="container  bg-danger">
+      <div class="container">
       
         <div class="row mt-5">
-          <div class="col-md-12 text-white">
-            <h2 class="text-center fontC">Todos os temas</h2>
+          <div class="col-md-12 text-white" style="background-color: rgba(191, 166, 107, 1);">
+            <h2 class="text-center fontC">Todos as Categorias</h2>
           </div>
         </div>
       
         <div class="row mt-3 mb-5 d-flex justify-content-center">
           <div class="col-md-6">
       
-            <table class="table table-hover text-white">
+            <table class="table table-hover text-white" style="background-color: rgba(191, 166, 107, 1);">
               <thead>
-                <tr class="fontC">
+                <tr class="font">
                   <th scope="col">#</th>
                   <th scope="col">Nome da sua empresa</th>
                   <th scope="col">Tipo Produto</th>
@@ -47,14 +49,14 @@
                 </tr>
               </thead>
       
-              <tbody class="fontC">
+              <tbody class="font">
                 <tr *ngFor= 'let categoria of listaCategoria'>
                   <th>{{categoria.id}}</th>
                   <td>{{categoria.tipoProduto}}</td>
                   <td>{{categoria.marcas}}</td>
                   <td class="d-flex justify-content-end">
-                    <button class="btn btn-light mr-3">Editar</button>
-                    <button class="btn btn-light">Apagar</button>
+                    <button class="btn btn-light me-2" [routerLink]="['/categoria-edit', categoria.id]">Editar</button>
+                    <button class="btn btn-light" [routerLink]="['/categoria-delete', categoria.id]">Apagar</button>
                   </td>
                 </tr>
               </tbody>
@@ -64,3 +66,4 @@
         </div>
       
       </div>
+    </body>

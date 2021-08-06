@@ -42,5 +42,7 @@ cadastrar(){
      this.categoria = new Categoria()
    })
 }
+
+
 }
 
