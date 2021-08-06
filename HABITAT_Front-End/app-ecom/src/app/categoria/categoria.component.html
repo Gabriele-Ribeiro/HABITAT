@@ -11,7 +11,6 @@
                 <div class="form-group">
                   <input [(ngModel)]= 'categoria.tipoProduto'type="text" class="form-control mb-2" id="tipoProduto" placeholder="Identifique a sua mercadoria.">
                   <input [(ngModel)]= 'categoria.marcas'type="text" class="form-control mb-2" id="marcas" placeholder="Digite o nome da sua empresa.">
-                  <input [(ngModel)]= 'categoria.recomendacoes'type="text" class="form-control mb-2" id="recomendacoes" placeholder="Digite sua recomendação.">
                 </div>
                 <br>
                 <div class="d-flex justify-content-center">
@@ -43,7 +42,6 @@
                   <th scope="col">#</th>
                   <th scope="col">Nome da sua empresa</th>
                   <th scope="col">Tipo Produto</th>
-                  <th scope="col">Recomendações</th>
                   <th scope="col" class="text-right">Modificações</th>
       
                 </tr>
@@ -54,7 +52,6 @@
                   <th>{{categoria.id}}</th>
                   <td>{{categoria.tipoProduto}}</td>
                   <td>{{categoria.marcas}}</td>
-                  <td>{{categoria.recomendacoes}}</td>
                   <td class="d-flex justify-content-end">
                     <button class="btn btn-light mr-3">Editar</button>
                     <button class="btn btn-light">Apagar</button>
