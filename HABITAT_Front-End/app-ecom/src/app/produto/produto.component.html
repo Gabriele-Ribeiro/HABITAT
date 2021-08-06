@@ -1,12 +1,11 @@
-<div class="container-fluid ">
+<body>
+  
+
+<div class="container-fluid">
 
     <div class="row d-flex justify-content-center ">
   
-      <div class="col-10 fontText bg-danger">
-  
-        <a routerLink='/inicio' class="text-left  text-white">
-          <i class="fa fa-arrow-circle-left" aria-hidden="true"></i> início
-        </a>
+      <div class="col-8 fontText bg">
   
         <h1 class="fs-54 text-center"> Produtos </h1>
         <h5 class="fs-18 text-center">Veja aqui todos os produtos cadastrados ou cadastre um novo:</h5>
@@ -19,7 +18,6 @@
                 <input [(ngModel)]='produto.foto' type="text" class="form-control mb-2" id="foto" placeholder="Insira o Link da foto">
                 <input [(ngModel)]='produto.descricao' type="text" class="form-control mb-2" id="descricao" placeholder="Digite a descrição do produto">
                 <input [(ngModel)]='produto.preco' type="text" class="form-control mb-2" id="preco" placeholder="Digite o preco">
-                <input [(ngModel)]='produto.tipoPagamento' type="text" class="form-control mb-2" id="tipoPagamento" placeholder="Digite o tipo de Pagamento">
                 
     
                 <div class="d-flex justify-content-lg-center ">
@@ -35,24 +33,22 @@
     
       </div>
     
-    </div>
-               
-
-         <div class="container-fluid">
-           <div class="row d-flez align-item-center">
-             <div class="col-10 d-flex justify-content-between">
+    
+           <div class="row d-flex justify-content-between mb-5">
+             <div class="col-md-10 d-flex justify-content-between bg">
            
-
-                <div *ngFor='let produto of listaProdutos' class="card " style="width: 18rem;">
+              
+                <div *ngFor='let produto of listaProdutos' class="card" style="width: 18rem;"> 
                   <img src="{{produto.foto}}" class="card-img-top" alt="...">
-                  <div class="card-body ">
+                  <div class="card-body">
                     <h5 class="card-title">{{produto.nomeProduto}}</h5>
                     <p class="card-text">{{produto.descricao}}</p>
                     <p>R${{produto.preco}}</p>
                     <a class="btn btn-primary" [routerLink]="['/produto-edit', produto.id]">Editar</a>
                     <a class="btn btn-primary" [routerLink]="['/produto-delete', produto.id]">Deletar</a>
                   </div>
-                </div> 
+               </div>
           </div>
       </div>
   </div>
+</body>
