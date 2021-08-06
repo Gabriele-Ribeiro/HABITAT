@@ -1,0 +1,33 @@
+<body>
+  
+<div class="container paD" style= "background-color:  rgba(191, 166, 107, 1)">
+
+    <div class="row">
+      <div class="col-md-12 paD">
+        <h1 class="text-center text-light">Atualizar Categoria</h1>
+      </div>
+    </div>
+  
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-6">
+  
+        <div class="form-group font">
+          <label for="marcas">Nome da sua Empresa</label>
+          <input type="text" class="form-control font" id="marcas" [(ngModel)]='categoria.marcas'>
+        </div>
+
+        <div class="form-group font">
+            <label for="tipoProduto">Categoria</label>
+            <input type="text" class="form-control font" id="tipoProduto" [(ngModel)]='categoria.tipoProduto'>
+          </div>
+        <br><br>
+        <div class="d-flex justify-content-center">
+          <button class="btn btn-light me-4" routerLink='/categoria' >Cancelar</button>
+          <button class="btn btn-light" (click)='atualizar()'>Atualizar</button>
+        </div>
+  
+      </div>
+    </div>
+  
+  </div>
+</body>

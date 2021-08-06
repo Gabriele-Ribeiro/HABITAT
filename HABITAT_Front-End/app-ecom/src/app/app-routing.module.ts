@@ -7,21 +7,28 @@ import { LogarComponent } from './logar/logar.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { ProdutoComponent } from './produto/produto.component';
 import { CategoriaComponent } from './categoria/categoria.component';
-
-
+import { ProdutoEditComponent } from './edit/produto-edit/produto-edit.component';
+import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.component';
+import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-delete.component';
+import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.component';
 
 const routes: Routes = [
-  {path: '', redirectTo:'inicio',pathMatch:'full'},
-
+  {path: '', redirectTo:'logar',pathMatch:'full'},
 
   {path: 'logar' ,component:LogarComponent },
   {path: 'cadastrar' ,component:CadastrarComponent},
   {path:'inicio', component:InicioComponent},
   {path:'blog',component:BlogComponent},
   {path:'sobre-nos',component:SobreNosComponent},
-  {path:'produto' ,component:ProdutoComponent},
-  {path:'categoria' ,component:CategoriaComponent}
-  
+
+  {path: 'produto', component: ProdutoComponent},
+  {path: 'categoria', component: CategoriaComponent}, 
+
+  {path: 'produto-edit/:id', component: ProdutoEditComponent},
+  {path: 'produto-delete/:id', component: ProdutoDeleteComponent},
+
+  {path: 'categoria-edit/:id', component: CategoriaEditComponent},
+  {path: 'categoria-delete/:id', component: CategoriaDeleteComponent}
 ];
 
 @NgModule({

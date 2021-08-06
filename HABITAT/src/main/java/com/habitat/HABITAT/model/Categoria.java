@@ -29,10 +29,6 @@ public class Categoria {
 
 	@NotNull
 	@Size(min = 5, max = 100)
-	private String recomendacoes;
-
-	@NotNull
-	@Size(min = 5, max = 100)
 	private String marcas;
 
 	@OneToMany(mappedBy = "tipoMercadoria", cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
@@ -61,14 +57,6 @@ public class Categoria {
 
 	public void setTipoProduto(String tipoProduto) {
 		this.tipoProduto = tipoProduto;
-	}
-
-	public String getRecomendacoes() {
-		return recomendacoes;
-	}
-
-	public void setRecomendacoes(String recomendacoes) {
-		this.recomendacoes = recomendacoes;
 	}
 
 	public String getMarcas() {
