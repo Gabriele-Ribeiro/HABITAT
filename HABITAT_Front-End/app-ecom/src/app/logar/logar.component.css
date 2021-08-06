@@ -1,7 +1,16 @@
+body {
+	height:200px; 
+	width:100px;
+ }
+
 .bg {
 	height: 100%;
 	display: grid;
+<<<<<<< HEAD
+	background-color: #B6ED9D;
+=======
 	background-color: rgba(72, 213, 5, 0.39);
+>>>>>>> e030343a032cd15548bc18a01ee840898df15adc
 }
 
 .sign {
@@ -30,7 +39,7 @@
 }
 
 button:hover{
-	color: gray;
+	color: #B6ED9D;
 }
 
 .font{
@@ -48,5 +57,12 @@ button:hover{
 }
 
 .fontB:hover{
-	color: gray;
+	color: #B6ED9D;
+}
+
+.fixarRodape {
+	bottom: 0;
+	position: fixed;
+	width: 90%;
+	text-align: center;
 }
