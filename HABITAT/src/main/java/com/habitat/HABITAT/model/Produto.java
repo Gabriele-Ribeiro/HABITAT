@@ -31,7 +31,10 @@ public class Produto {
 	private String nomeProduto;
 
 	@NotNull
-	@Size(min = 10, max = 500)
+	private String foto;
+
+	@NotNull
+	@Size(min = 5, max = 500)
 	private String descricao;
 
 	@NotNull
@@ -41,13 +44,13 @@ public class Produto {
 	private TipoPagamento tipoPagamento;
 
 	@ManyToOne(cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
-	@JsonIgnoreProperties({"produtosCriados"})
+	@JsonIgnoreProperties({ "produtosCriados" })
 	@JoinColumn(name = "fk_categoria")
 	private Categoria tipoMercadoria;
 
 	@ManyToOne(cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
 	@JoinColumn(name = "fk_usuario")
-	@JsonIgnoreProperties({"produtosCriados"})
+	@JsonIgnoreProperties({ "produtosCriados" })
 	private Usuario criador;
 
 	public Usuario getCriador() {
@@ -106,4 +109,11 @@ public class Produto {
 		this.tipoPagamento = tipoPagamento;
 	}
 
+	public String getFoto() {
+		return foto;
+	}
+
+	public void setFoto(String foto) {
+		this.foto = foto;
+	}
 }
