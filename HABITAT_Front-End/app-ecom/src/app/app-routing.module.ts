@@ -7,6 +7,8 @@ import { LogarComponent } from './logar/logar.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { ProdutoComponent } from './produto/produto.component';
 import { CategoriaComponent } from './categoria/categoria.component';
+import { ProdutoEditComponent } from './edit/produto-edit/produto-edit.component';
+import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.component';
 
 const routes: Routes = [
   {path: '', redirectTo:'logar',pathMatch:'full'},
@@ -18,7 +20,10 @@ const routes: Routes = [
   {path:'sobre-nos',component:SobreNosComponent},
 
   {path: 'produto', component: ProdutoComponent},
-  {path: 'categoria', component: CategoriaComponent} 
+  {path: 'categoria', component: CategoriaComponent}, 
+
+  {path: 'produto-edit/:id', component: ProdutoEditComponent},
+  {path: 'produto-delete/:id', component: ProdutoDeleteComponent}
 ];
 
 @NgModule({
