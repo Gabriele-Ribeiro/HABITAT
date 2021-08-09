@@ -76,44 +76,7 @@ body {
 ------------------------------------
 ---------------LAYOUT---------------
 ------------------------------------
-*/
 
-/* BOX */
-#wrapper {
-  background-color: #fff;
-  width: 695px;
-  height: 495px;
-  margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
-
-  border-radius: 8px;
-  
-}
-
-/* FLEXBOX */
-.main-container {
-  height: 495px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* LEFT COLUMN */
-.left-cl {
-  margin: 0 20px 0 0;
-  flex: 1;
-  z-index: 98;
-}
-
-/* RIGHT COLUMN */
-.right-cl {
-  margin: 0 20px 0 0px;
-  flex: 1;
-  z-index: 98;
-}
-
-/*
 ------------------------------------
 ----------------FONTS---------------
 ------------------------------------
@@ -169,14 +132,15 @@ p {
   padding: 20px 50px;
   border-radius: 100px;
 
+
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 12px;
   text-transform: uppercase;
   color: #FFF;
   letter-spacing: 1.98px;
-
-  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-top: 15px;
 
   /* ANIMATION */
   -o-transition:color .3s ease-out,  .3s ease-in;
@@ -206,32 +170,6 @@ p {
   width: 30px;
 }
 
-
-
-
-/*
-------------------------------------
-------------BG ELEMENTS-------------
-------------------------------------
-*/
-
-
-/* BACKGROUND DIAGONAL SHAPE */
-.diagonal {
-  position: absolute;
-  width: 100px;
-  height: 495px;
-  margin-left: 150px;
-  margin-top: -35px;
-  background: #B6ED9D;
-  z-index: -1;
-  /* Skew */
-  -webkit-transform: skew(-30deg);
-  -moz-transform: skew(-30deg);
-  -o-transform: skew(-30deg);
-  transform: skew(-30deg);
-}
-
 /* BUTTON BACK BACKGROUND */
 .button-back {
   position: absolute;
@@ -243,7 +181,7 @@ p {
 
   -webkit-transform:rotate(360deg)
 
-  /* ANIMATION 
+  /* ANIMATION
   -o-transition:color .3s ease-out, border-top .3s ease-in;
   -ms-transition:color .3s ease-out, border-top .3s ease-in;
   -moz-transition:color .3s ease-out, border-top .3s ease-in;
