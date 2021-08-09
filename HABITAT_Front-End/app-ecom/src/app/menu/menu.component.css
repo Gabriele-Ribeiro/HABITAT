@@ -20,7 +20,7 @@
 .font{
   font-family: 'Georama';
   letter-spacing: 20px;
-  color: #B7EE9E;
+  color: rgba(72, 213, 5, 0.39);
 } 
 .fa{
   color: white;

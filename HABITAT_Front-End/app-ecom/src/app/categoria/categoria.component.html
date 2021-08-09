@@ -27,7 +27,7 @@
       
       </div>
       
-      <div class="container">
+      <div class="container paD">
       
         <div class="row mt-5">
           <div class="col-md-12 text-white" style="background-color: rgba(191, 166, 107, 1);">
@@ -40,7 +40,7 @@
       
             <table class="table table-hover text-white" style="background-color: rgba(191, 166, 107, 1);">
               <thead>
-                <tr class="font">
+                <tr>
                   <th scope="col">#</th>
                   <th scope="col">Nome da sua empresa</th>
                   <th scope="col">Tipo Produto</th>
@@ -49,8 +49,8 @@
                 </tr>
               </thead>
       
-              <tbody class="font">
-                <tr *ngFor= 'let categoria of listaCategoria'>
+              <tbody>
+                <tr class="font" *ngFor= 'let categoria of listaCategoria'>
                   <th>{{categoria.id}}</th>
                   <td>{{categoria.tipoProduto}}</td>
                   <td>{{categoria.marcas}}</td>
@@ -66,4 +66,5 @@
         </div>
       
       </div>
+
     </body>

@@ -2,10 +2,6 @@ body{
     background-color: rgba(72, 213, 5, 0.39);
 }
 
-.paD{
-    padding-top: 30px;
-}
-
 button{
     background-color: rgba(191, 166, 107, 1);
     color: white;
@@ -13,10 +9,22 @@ button{
 
 button:hover{
     background-color: white;
-    color: gray;
+    color: #B6ED9D;
     
 }
 
 .font{
     color:gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fontA{
+    color:white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.paD{
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
