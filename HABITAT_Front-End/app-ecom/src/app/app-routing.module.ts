@@ -14,7 +14,7 @@ import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.com
 import { BuscarCategoriaComponent } from './buscar-categoria/buscar-categoria.component';
 
 const routes: Routes = [
-  {path: '', redirectTo:'logar',pathMatch:'full'},
+  {path: '', redirectTo:'inicio',pathMatch:'full'},
 
   {path: 'logar' ,component:LogarComponent },
   {path: 'cadastrar' ,component:CadastrarComponent},
@@ -23,7 +23,7 @@ const routes: Routes = [
   {path:'sobre-nos',component:SobreNosComponent},
 
   {path: 'produto', component: ProdutoComponent},
-  {path: 'categoria', component: CategoriaComponent}, 
+  {path: 'categoria', component: CategoriaComponent},
 
   {path: 'produto-edit/:id', component: ProdutoEditComponent},
   {path: 'produto-delete/:id', component: ProdutoDeleteComponent},
