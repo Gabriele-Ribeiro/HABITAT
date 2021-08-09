@@ -25,7 +25,7 @@
 h3 {
 	text-align: center;
 	color: white;
-	font-family: 'Carrois Gothic', sans-serif; 
+	font-family: 'Carrois Gothic', sans-serif;
 	line-height: 15px;
 }
 
@@ -45,3 +45,11 @@ button:hover{
 .body{
 	background-color: #B6ED9D;
 	}
+
+.log
+{
+  position: relative;
+  bottom: 25%;
+  padding-bottom: 20px;
+  padding-top: 80px;
+}

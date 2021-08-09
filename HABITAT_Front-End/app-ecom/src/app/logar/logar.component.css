@@ -1,16 +1,12 @@
 body {
-	height:200px; 
+	height:200px;
 	width:100px;
  }
 
 .bg {
 	height: 100%;
 	display: grid;
-<<<<<<< HEAD
-	background-color: #B6ED9D;
-=======
 	background-color: rgba(72, 213, 5, 0.39);
->>>>>>> e030343a032cd15548bc18a01ee840898df15adc
 }
 
 .sign {
@@ -34,7 +30,7 @@ body {
 .sign h1 {
 	text-align: center;
 	color: white;
-	font-family: 'Carrois Gothic', sans-serif; 
+	font-family: 'Carrois Gothic', sans-serif;
 	line-height: 15px;
 }
 
@@ -66,3 +62,11 @@ button:hover{
 	width: 90%;
 	text-align: center;
 }
+.log
+{
+  position: relative;
+  bottom: 25%;
+  padding-bottom: 20px;
+  padding-top: 80px;
+}
+
