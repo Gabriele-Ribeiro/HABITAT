@@ -1,7 +1,5 @@
-.bg{
-    height: 100%;
-	display: grid;
-    background-color: #B6ED9D;
+body{
+	background-color: #B6ED9D;
 }
 
 .sign {
@@ -42,14 +40,10 @@ button:hover{
     color: gray;
 }
 
-.body{
-	background-color: #B6ED9D;
-	}
-
 .log
 {
   position: relative;
   bottom: 25%;
-  padding-bottom: 20px;
+  padding-bottom: 70px;
   padding-top: 80px;
 }

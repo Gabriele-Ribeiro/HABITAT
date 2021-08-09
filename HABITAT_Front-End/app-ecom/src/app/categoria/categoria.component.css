@@ -1,4 +1,4 @@
-body{
+.bg{
     background-color: rgba(72, 213, 5, 0.39);
 }
 
@@ -19,6 +19,7 @@ button:hover{
 .font{
     color: white;
 }
+
 .font:hover{
     color: gray;
 }
