@@ -13,7 +13,7 @@ import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-de
 import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.component';
 
 const routes: Routes = [
-  {path: '', redirectTo:'logar',pathMatch:'full'},
+  {path: '', redirectTo:'inicio',pathMatch:'full'},
 
   {path: 'logar' ,component:LogarComponent },
   {path: 'cadastrar' ,component:CadastrarComponent},
@@ -22,7 +22,7 @@ const routes: Routes = [
   {path:'sobre-nos',component:SobreNosComponent},
 
   {path: 'produto', component: ProdutoComponent},
-  {path: 'categoria', component: CategoriaComponent}, 
+  {path: 'categoria', component: CategoriaComponent},
 
   {path: 'produto-edit/:id', component: ProdutoEditComponent},
   {path: 'produto-delete/:id', component: ProdutoDeleteComponent},
