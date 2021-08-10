@@ -18,7 +18,6 @@ import { ProdutoEditComponent } from './edit/produto-edit/produto-edit.component
 import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.component';
 import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.component';
 import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-delete.component';
-import { ChatbotComponent } from './pesquisa/chatbot.component';
 import { BuscarCategoriaComponent } from './buscar-categoria/buscar-categoria.component';
 import { PesquisaComponent } from './pesquisa/pesquisa.component';
 
@@ -38,7 +37,6 @@ import { PesquisaComponent } from './pesquisa/pesquisa.component';
     ProdutoDeleteComponent,
     CategoriaEditComponent,
     CategoriaDeleteComponent,
-    ChatbotComponent,
     BuscarCategoriaComponent,
     PesquisaComponent
   ],
