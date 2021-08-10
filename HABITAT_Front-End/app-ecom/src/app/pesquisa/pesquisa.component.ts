@@ -18,23 +18,23 @@ export class PesquisaComponent implements OnInit {
   ) { }
 
   ngOnInit(){
+    this.findAllProdutos()
   }
 
   findAllProdutos(){
     this.produtoService.getAllProduto().subscribe((resp: Produto[])=>{
    this.listaProduto = resp
+   console.log("postagens "+ this.listaProduto)
     })
   }
 
   findByCategoriaProduto(){
-    if(this.categoriaProduto == ''){
-      this.produtoService.getAllProduto()
-    }else{
+    listaProduto
     this.produtoService.getByCategoriaProduto(this.categoriaProduto).subscribe((resp: Produto[])=>
     {
-      this.listaProduto = resp
+      this.listaPro duto = resp
     })
-  }
+
 }
 
 }
