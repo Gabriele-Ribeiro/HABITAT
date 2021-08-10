@@ -20,11 +20,6 @@ export class CategoriaComponent implements OnInit {
   ) { }
 
   ngOnInit(){
-    if(environment.token == ''){
-      alert('Sua seção inspirou. Faça o Login novamente!')
-      this.router.navigate(['/logar'])
-    }
-
     this.findAllCategoria()
   }
 

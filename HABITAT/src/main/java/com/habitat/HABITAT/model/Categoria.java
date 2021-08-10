@@ -27,7 +27,7 @@ public class Categoria {
 	@Size(min = 5, max = 100)
 	private String tipoProduto;
 
-	@NotNull
+	
 	@Size(min = 5, max = 100)
 	private String marcas;
 

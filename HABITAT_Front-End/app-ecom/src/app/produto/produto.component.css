@@ -1,6 +1,7 @@
 .bg{
     background-color: rgba(191, 166, 107, 1);
     margin-top: 20px;
+ 
 }
 
 body{
@@ -10,3 +11,12 @@ background-color:rgba(72, 213, 5, 0.39);
 .pa{
     padding: 5px;
 }
+
+cds{
+ height: 80px;
+ width: 80px;
+}
+
+
+
+

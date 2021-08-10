@@ -2,7 +2,9 @@ import { stringify } from '@angular/compiler/src/util';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
+import { Categoria } from '../model/Categoria';
 import { Produto } from '../model/Produto';
+import { Usuario } from '../model/Usuario';
 import { ProdutoService } from '../service/produto.service';
 
 @Component({
@@ -11,7 +13,9 @@ import { ProdutoService } from '../service/produto.service';
   styleUrls: ['./produto.component.css']
 })
 export class ProdutoComponent implements OnInit {
-
+   idCategoria:number
+   categoria:Categoria = new Categoria 
+   listaCategoria: Categoria[]
    produto: Produto = new Produto()
    listaProdutos: Produto[]
 
@@ -21,12 +25,8 @@ export class ProdutoComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    window.scroll(0,0)
 
-    if(environment.token == ''){
-    alert('Sua seção expirou, faça o login novamente.')
-    this.router.navigate(['/logar'])
-  }
+ 
   this.findAllProdutos()
 }
 
@@ -38,6 +38,8 @@ this.listaProdutos = resp
 }
 
   cadastrar(){
+    this.categoria.id = this.idCategoria
+    this.produto.tipoMercadoria = this.categoria;
     console.log("produto"+JSON.stringify(this.produto))
       this.produtoService.postProduto(this.produto).subscribe((resp: Produto)=>{
     this.produto = resp
