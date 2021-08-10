@@ -12,6 +12,7 @@ import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.c
 import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-delete.component';
 import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.component';
 import { BuscarCategoriaComponent } from './buscar-categoria/buscar-categoria.component';
+import { PesquisaComponent } from './pesquisa/pesquisa.component';
 
 const routes: Routes = [
   {path: '', redirectTo:'inicio',pathMatch:'full'},
@@ -21,6 +22,7 @@ const routes: Routes = [
   {path:'inicio', component:InicioComponent},
   {path:'blog',component:BlogComponent},
   {path:'sobre-nos',component:SobreNosComponent},
+  {path:'pesquisa',component:PesquisaComponent},
 
   {path: 'produto', component: ProdutoComponent},
   {path: 'categoria', component: CategoriaComponent},

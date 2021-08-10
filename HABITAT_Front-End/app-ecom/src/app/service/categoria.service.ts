@@ -34,8 +34,4 @@ export class CategoriaService {
   deleteCategoria(id: Number) {
     return this.http.delete(`https://projetohabitat.herokuapp.com/categoria/id/${id}`, this.token)
   }
-
-  getBytipoProduto(tipoProduto: string): Observable<Categoria[]> {
-    return this.http.get<Categoria[]>(`https://projetohabitat.herokuapp.com/categoria/tipoProduto${tipoProduto}`, this.token)
-  }
 }
