@@ -1,16 +1,19 @@
 .carText
 {
   text-align: center;
-  color: rgba(191, 166, 107, 1)
+  color: rgba(191, 166, 107, 1);
 }
 .imgCar
 {
-
-  width: 350px;
-  height: 600px;
+  width: 150px;
+  height: 300px;
+}
+.paD{
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 h1 {
-  font-family: 'Franklin Gothic', sans-serif;
+  font-family: 'Carrois Gothic', sans-serif;
   font-weight: 300;
   font-size: 35px;
   color: #FFF;
@@ -19,7 +22,7 @@ h1 {
 }
 h5
 {
-  font-family: 'Franklin Gothic', sans-serif;
+  font-family: 'Carrois Gothic', sans-serif;
   font-weight: 300;
   font-size: 35px;
   color: rgba(191, 166, 107, 1);
@@ -27,11 +30,11 @@ h5
   padding-bottom: 10px;
 }
 button{
-  background-color: #B6ED9D;
+  background-color: rgba(191, 166, 107, 1);
   color: white;
 }
 
 button:hover{
-  background-color: white;
-  color: #B6ED9D;
+  background-color:  #B6ED9D ;
+  color: white;
 }
