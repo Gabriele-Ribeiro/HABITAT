@@ -19,14 +19,7 @@
                 <input [(ngModel)]='produto.descricao' type="text" class="form-control mb-2" id="descricao" placeholder="Digite a descrição do produto">
                 <input [(ngModel)]='idCategoria' type="text" class="form-control mb-2" id="tipoMercadoria" placeholder="Digite o tipo categoria">
 
-                <div class="form-group">
-                  <label for="texto">Escolha uma categoria <a data-dismiss="modal" routerLink='/categoria'>cadastre um novo</a>: </label>
-                  <select name="categoria" id="categoria" class="form-control" [(ngModel)]='idCategoria'>
-                    <option *ngFor='let item of listaCategoria' value="{{item.id}}">
-                      {{item.tipoProduto}}
-                    </option>
-                  </select>
-                </div>
+                
                 
 
                 <input [(ngModel)]='produto.preco' type="text" class="form-control mb-2" id="preco" placeholder="Digite o preco">
