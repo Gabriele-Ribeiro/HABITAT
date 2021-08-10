@@ -37,11 +37,8 @@ export class ProdutoService {
     return this.http.get<Produto>(`https://projetohabitat.herokuapp.com/produto/id/${id}`, this.token)
   }
 
-  getBynomeProduto(nomeProduto: string): Observable<Produto[]> {
-    return this.http.get<Produto[]>(`https://projetohabitat.herokuapp.com/produto/nomeProduto${nomeProduto}`, this.token)
+  getByCategoriaProduto(nomeProduto: string): Observable<Produto[]> {
+    return this.http.get<Produto[]>(`https://projetohabitat.herokuapp.com/produto/nomeProduto/${nomeProduto}`, this.token)
   }
-
-
-
 }
 

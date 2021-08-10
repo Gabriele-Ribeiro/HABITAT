@@ -1,0 +1,25 @@
+body{
+    background-color: #B6ED9D;
+}
+
+button{
+    background-color: rgba(191, 166, 107, 1);
+    color: white;
+}
+
+button:hover{
+    background-color: white;
+    color: #B6ED9D;
+    
+}
+
+.fontA{
+    color:white;
+    text-align: center;
+    font-family: 'Carrois Gothic', sans-serif;
+}
+
+.paD{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
