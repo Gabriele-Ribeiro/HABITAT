@@ -19,7 +19,9 @@ import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.c
 import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.component';
 import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-delete.component';
 import { BuscarCategoriaComponent } from './buscar-categoria/buscar-categoria.component';
+import { CarrinhoComponent } from './carrinho/carrinho.component';
 import { PesquisaComponent } from './pesquisa/pesquisa.component';
+
 
 @NgModule({
   declarations: [
@@ -38,8 +40,11 @@ import { PesquisaComponent } from './pesquisa/pesquisa.component';
     CategoriaEditComponent,
     CategoriaDeleteComponent,
     BuscarCategoriaComponent,
+    CarrinhoComponent
+    BuscarCategoriaComponent,
     PesquisaComponent
   ],
+  
   imports: [
     BrowserModule,
     AppRoutingModule,
