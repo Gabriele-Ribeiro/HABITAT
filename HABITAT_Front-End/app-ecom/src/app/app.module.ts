@@ -20,6 +20,7 @@ import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.com
 import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-delete.component';
 import { ChatbotComponent } from './chatbot/chatbot.component';
 import { BuscarCategoriaComponent } from './buscar-categoria/buscar-categoria.component';
+import { CarrinhoComponent } from './carrinho/carrinho.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { BuscarCategoriaComponent } from './buscar-categoria/buscar-categoria.co
     CategoriaEditComponent,
     CategoriaDeleteComponent,
     ChatbotComponent,
-    BuscarCategoriaComponent
+    BuscarCategoriaComponent,
+    CarrinhoComponent
   ],
   imports: [
     BrowserModule,
