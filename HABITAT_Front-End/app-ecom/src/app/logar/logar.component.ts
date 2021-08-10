@@ -22,10 +22,12 @@ export class LogarComponent implements OnInit {
   ngOnInit() {
     window.scroll(0, 0)
 
+  
   }
 
   logar() {
-
+    
+    console.log("usuario"+JSON.stringify(this.userLogin))
     this.auth.logar(this.userLogin).subscribe((resp: UsuarioLogin) => {
       this.userLogin = resp
 
@@ -35,7 +37,7 @@ export class LogarComponent implements OnInit {
       environment.foto = this.userLogin.foto
       environment.id = this.userLogin.id
       environment.tipo = this.userLogin.tipo
-
+     
       this.router.navigate(['/inicio'])
     }, erro => {
       if (erro.status == 500) {
