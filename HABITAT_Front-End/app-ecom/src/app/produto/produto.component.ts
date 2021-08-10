@@ -15,6 +15,7 @@ import { ProdutoService } from '../service/produto.service';
 export class ProdutoComponent implements OnInit {
    idCategoria:number
    categoria:Categoria = new Categoria 
+   listaCategoria: Categoria[]
    produto: Produto = new Produto()
    listaProdutos: Produto[]
 
