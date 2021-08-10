@@ -13,6 +13,7 @@ import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-de
 import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.component';
 import { BuscarCategoriaComponent } from './buscar-categoria/buscar-categoria.component';
 import { PesquisaComponent } from './pesquisa/pesquisa.component';
+import { CarrinhoComponent } from './carrinho/carrinho.component'
 
 const routes: Routes = [
   {path: '', redirectTo:'inicio',pathMatch:'full'},
@@ -23,6 +24,7 @@ const routes: Routes = [
   {path:'blog',component:BlogComponent},
   {path:'sobre-nos',component:SobreNosComponent},
   {path:'pesquisa',component:PesquisaComponent},
+  {path:'carrinho' ,component:CarrinhoComponent},
 
   {path: 'produto', component: ProdutoComponent},
   {path: 'categoria', component: CategoriaComponent},
@@ -34,11 +36,11 @@ const routes: Routes = [
   {path: 'categoria-delete/:id', component: CategoriaDeleteComponent},
 
   {path: 'categoria-buscar/:id', component: BuscarCategoriaComponent}
-
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
+
 export class AppRoutingModule { }
