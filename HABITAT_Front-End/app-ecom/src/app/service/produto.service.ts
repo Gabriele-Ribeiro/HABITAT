@@ -16,7 +16,7 @@ export class ProdutoService {
   }
 
   getAllProduto(): Observable<Produto[]> {
-    return this.http.get<Produto[]>('https://projetohabitat.herokuapp.com/produto/todos')
+    return this.http.get<Produto[]>('https://projetohabitat.herokuapp.com/produto/todos' ,this.token )
 
   }
 
@@ -34,7 +34,7 @@ export class ProdutoService {
   }
 
   getByIdProduto(id: number): Observable<Produto> {
-    return this.http.get<Produto>(`https://projetohabitat.herokuapp.com/produto/id/${id}`)
+    return this.http.get<Produto>(`https://projetohabitat.herokuapp.com/produto/id/${id}`, this.token)
   }
 
 
