@@ -17,8 +17,14 @@
                 <input [(ngModel)]='produto.nomeProduto' type="text" class="form-control mb-2" id="nomeProduto" placeholder="Digite o nome do produto">
                 <input [(ngModel)]='produto.foto' type="text" class="form-control mb-2" id="foto" placeholder="Insira o Link da foto">
                 <input [(ngModel)]='produto.descricao' type="text" class="form-control mb-2" id="descricao" placeholder="Digite a descrição do produto">
-                <input [(ngModel)]='idCategoria' type="text" class="form-control mb-2" id="tipoMercadoria" placeholder="Digite o tipo categoria">
 
+
+                <div class="form-group">
+                  <label for="texto">Escolha uma Categoria<a routerLink='/categoria'> cadastre uma nova</a>:</label>
+                  <select name="categoria" id="categoria" class="form-control mb-2" [(ngModel)]='listaCategoria' (change)='findByIdCategoria()'>
+                    <option *ngFor='let item of listaCategoria'  value="{{item.id}}">{{item.tipoProduto}}</option>
+                  </select>
+                </div>
                 
                 
 
@@ -41,10 +47,12 @@
        
          
       
-           <div class="row-cols-4 p-5">
+           <div class="row-cols-4 p-5">  
+             <H1>Todos os Produto</H1>
+
              <div class="col-md-12 d-flex flex-wrap justify-content-between p-5 bg">
 
-        
+               
                 <div *ngFor='let produto of listaProdutos' class="card cds" style="width: 18rem;">
                   <img src="{{produto.foto}}" class="card-img-top" alt="...">
                   <div class="card-body">
