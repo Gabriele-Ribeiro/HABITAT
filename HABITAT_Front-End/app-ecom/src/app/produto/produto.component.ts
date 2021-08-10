@@ -31,7 +31,7 @@ export class ProdutoComponent implements OnInit {
 
  
   this.findAllProdutos()
-  this.findByIdCategoria()
+  this.getAllCategoria()
 }
 
  findAllProdutos(){
@@ -56,8 +56,7 @@ findByIdCategoria(){
 
   cadastrar(){
     this.categoria.id = this.idCategoria
-    this.produto.tipoMercadoria = this.categoria;
-
+    this.produto.tipoMercadoria = this.categoria
     console.log("produto"+JSON.stringify(this.produto))
       this.produtoService.postProduto(this.produto).subscribe((resp: Produto)=>{
     this.produto = resp
