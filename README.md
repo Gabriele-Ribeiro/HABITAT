@@ -1,6 +1,4 @@
-# HABITAT
-
-Seu buscador sustentável!
+# HABITAT, seu buscador sustentável!
 
 [![Stargazers][stars-shield]][stars-url]
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
