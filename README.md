@@ -25,19 +25,23 @@ Foi exatamente isso que pensamos para o nosso Marketplace, criando um conjunto d
 
 :white_check_mark: Efetuar Login com chave de Segurança.
 
-   - Nome, email e senha.
+   - Nome, email, senha e foto.
 
-:white_check_mark: Fazer pesquisa de produto por categoria.
+:white_check_mark: Fazer pesquisa de produto.
 
    - Nome, características do produto, marcas e recomendações.
 
 :white_check_mark: Publicar Produto:
 
   - Nome, descrição, preço e forma de pagamento.
+
+:white_check_mark: Blog informativo.
+
+  
     
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
-:leaves: BACKLOG EM ANDAMENTO... :leaves:
+:leaves: FRONTEND EM ANDAMENTO... :leaves:
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 ## AUTORES:
