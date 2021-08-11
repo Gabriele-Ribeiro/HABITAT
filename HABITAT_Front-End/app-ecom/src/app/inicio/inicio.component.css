@@ -25,9 +25,9 @@ p{
 }
 
 .titleCard{
-  color: rgba(191, 166, 107, 1);
-  font-family: cursive;
-  font-style: italic;
+  font-family: 'Carrois Gothic', sans-serif;
+  color: rgba(191, 166, 107, 1);  
+  
 }
 
 .body{
@@ -127,12 +127,12 @@ p {
 .basket {
   background-color: #B6ED9D;
   border: none;
-  padding: 20px 50px;
+  padding: 10px 40px;
   border-radius: 100px;
 
 
   font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 12px;
   text-transform: uppercase;
   color: #FFF;
@@ -255,4 +255,3 @@ p {
 .tm{
   height: 200px;
 }
-
