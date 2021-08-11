@@ -1,45 +1,45 @@
 <body>
 
-    <div class="container paD">
+  <div class="container paD">
 
-        <div class="col-md-12 paD" style= "background-color:  rgba(191, 166, 107, 1)">
-      
-          <div class="row">
-            <div class="col-md-12">
-              <h1 class="fontA">Pesquisar:</h1>
-            </div>
-          </div>
+    <div class="col-md-12 paD" style="background-color:  rgba(191, 166, 107, 1)">
 
-          <div class="row d-flex justify-content-center">
-            <div class="col-md-6">
-        
-      
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="fontA">Pesquisar:</h1>
+        </div>
+      </div>
+
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-6">
+
+               
               <div class="form-group">
                   <input type="text" class="form-control font" id="pesquisar" 
-                  placeholder="O que você procura?" [(ngModel)]= 'categoriaProduto' (keyup)='findByCategoriaProduto()'>
+                  placeholder="O que você procura?" [(ngModel)]= 'categoriaProduto'  >
                 </div>
               <br>
               <div class="d-flex justify-content-center">
-                <button class="btn btn-light " routerLink='/inicio'>Cancelar</button>
+                <button class="btn btn-light me-2" routerLink='/inicio'>Cancelar</button>
+                <button class="btn btn-light " (click)="findByCategoriaProduto()">Pesquisar</button>
               </div>
             </div>
         </div>
 
-        <div class="row d-flex justify-content-center">
-            <div class="col-md-6">
-                <div *ngFor= 'let item of listaProduto'>
-                    <div *ngFor='let produto of listaProduto' class="card cds" style="width: 18rem;">
-                        <img src="{{produto.foto}}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">{{produto.nomeProduto}}</h5>
-                          <p class="card-text">{{produto.descricao}}</p>
-                          <p>R${{produto.preco}}</p>
-                        </div>
-                     </div>
-                    </div> 
-    </div> 
-</div>
+        <div class="col-md-12 d-flex flex-wrap justify-content-between padCard p-5">
+              <div *ngFor='let produto of listaProdutos' class="card cds" style="width: 20rem">
+                <img src="{{produto.foto}}" class="card-img-top icard" alt="...">
+                <div class="card-body text-center">
+                  <h5 class="card-title">{{produto.nomeProduto}}</h5>
+                  <p class="card-text">{{produto.descricao}}</p>
+                  <p>R${{produto.preco}}</p>
+                  <div class="d-flex justify-content-center">
+                  <a class="btn btn-primary m-1 cds bt" routerLink='/carrinho'>Comprar</a>
+                  </div>
+             </div>
+            </div>
+      </div>
 
-    </div>               
-</div>
+    </div>
+  </div>
 </body>

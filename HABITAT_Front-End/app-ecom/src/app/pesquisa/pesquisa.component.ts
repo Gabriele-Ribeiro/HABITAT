@@ -8,7 +8,7 @@ import { ProdutoService } from '../service/produto.service';
   styleUrls: ['./pesquisa.component.css']
 })
 export class PesquisaComponent implements OnInit {
-  listaProduto: Produto[]
+  listaProdutos: Produto[]
   categoriaProduto: string
 
   constructor(
@@ -21,15 +21,16 @@ export class PesquisaComponent implements OnInit {
 
   findAllProdutos(){
     this.produtoService.getAllProduto().subscribe((resp: Produto[])=>{
-   this.listaProduto = resp
-    })
-  }
+   this.listaProdutos = resp
+   
+   })
+   }
 
   findByCategoriaProduto(){
+  // this.listaProdutos.pop()
     this.produtoService.getByCategoriaProduto(this.categoriaProduto).subscribe((resp: Produto[])=>
     {
-      this.listaProduto = resp
-      this.listaProduto.pop()
+      this.listaProdutos = resp
     })
 }
 }

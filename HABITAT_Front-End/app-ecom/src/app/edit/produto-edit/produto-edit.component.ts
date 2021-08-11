@@ -20,10 +20,6 @@ export class ProdutoEditComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    if(environment.token == ''){
-      alert('Sua seção expirou, faça o login novamente.')
-      this.router.navigate(['/logar'])
-    }
     let id = this.route.snapshot.params['id']
     this.findByIdProtudo(id)
   }

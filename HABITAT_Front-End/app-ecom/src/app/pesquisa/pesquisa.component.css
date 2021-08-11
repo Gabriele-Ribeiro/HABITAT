@@ -20,6 +20,29 @@ button:hover{
 }
 
 .paD{
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px;
 }
+
+.cds{
+    border-color: #B6ED9D;
+  }
+
+  .cds:hover{
+   box-shadow: 0 6px 10px #B6ED9D, 0 3px 6px #B6ED9D;
+  }
+  
+  .bt{
+    background-color: rgba(191, 166, 107, 1);  
+  }
+  
+  .icard{
+   height: 10rem;
+  }
+  
+  .bgh{
+    background-color:  rgba(191, 166, 107, 1);
+    border-radius:50% 50% 0% 0%;
+    margin-bottom: -1.5rem;
+    margin-bottom: 500px;
+    text-align: center;
+  }

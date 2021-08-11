@@ -1,15 +1,31 @@
 .bg{
     background-color: rgba(191, 166, 107, 1);
     margin-top: 20px;
- 
 }
 
 body{
 background-color:rgba(72, 213, 5, 0.39);
 }
 
+.paD{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 .pa{
     padding: 5px;
+}
+
+.fs{
+  color: white;
+}
+
+.fs1{
+  color: white;
+}
+
+.fs1:hover{
+  color: #B6ED9D;
 }
 
 button{
@@ -26,7 +42,7 @@ button:hover{
   border-color: #B6ED9D;
 }
 .cds:hover{
- box-shadow: 0 6px 10px rgba(72, 213, 5, 0.39), 0 3px 6px rgba(72, 213, 5, 0.39);
+ box-shadow: 0 6px 10px #B6ED9D, 0 3px 6px #B6ED9D;
 }
 
 .bt{
@@ -37,7 +53,15 @@ button:hover{
  height: 15rem;
 }
 
+.bgh{
+  background-color:  rgba(191, 166, 107, 1);
+  color: white;
+  border-radius:50% 50% 0% 0%;
+  margin-bottom: -1.5rem;
+  text-align: center;
+}
 
+ 
 
 
 

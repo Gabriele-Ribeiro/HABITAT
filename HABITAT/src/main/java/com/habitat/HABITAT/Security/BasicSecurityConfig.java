@@ -41,6 +41,7 @@ public class BasicSecurityConfig extends WebSecurityConfigurerAdapter {
         .antMatchers(HttpMethod.GET ,"/categoria/id/{id}").permitAll()
         .antMatchers(HttpMethod.GET ,"/produto/id/{id}").permitAll()
         .antMatchers(HttpMethod.GET ,"/produto/todos").permitAll()
+        .antMatchers(HttpMethod.GET ,"/produto/nomeProduto/{nomeProduto}").permitAll()
         .antMatchers(HttpMethod.GET ,"/categoria/todos").permitAll()
         .antMatchers(HttpMethod.POST ,"/categoria").permitAll()
         .antMatchers(HttpMethod.POST ,"/produto").permitAll()
