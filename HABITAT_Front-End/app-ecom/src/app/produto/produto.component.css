@@ -37,7 +37,14 @@ button:hover{
  height: 15rem;
 }
 
+.bgh{
+  background-color:  rgba(191, 166, 107, 1);
+  border-radius:50% 50% 0% 0%;
+  margin-bottom: -1.5rem;
+  text-align: center;
+}
 
+ 
 
 
 
