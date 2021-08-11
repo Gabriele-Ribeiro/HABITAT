@@ -14,7 +14,6 @@ import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.com
 import { BuscarCategoriaComponent } from './buscar-categoria/buscar-categoria.component';
 import { PesquisaComponent } from './pesquisa/pesquisa.component';
 import { CarrinhoComponent } from './carrinho/carrinho.component'
-import { ChatbotComponent } from './chatbot/chatbot.component';
 
 const routes: Routes = [
   {path: '', redirectTo:'inicio',pathMatch:'full'},

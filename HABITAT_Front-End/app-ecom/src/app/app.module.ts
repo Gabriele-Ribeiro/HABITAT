@@ -21,7 +21,6 @@ import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-de
 import { BuscarCategoriaComponent } from './buscar-categoria/buscar-categoria.component';
 import { CarrinhoComponent } from './carrinho/carrinho.component';
 import { PesquisaComponent } from './pesquisa/pesquisa.component';
-import { ChatbotComponent } from './chatbot/chatbot.component';
 
 
 @NgModule({
@@ -43,7 +42,6 @@ import { ChatbotComponent } from './chatbot/chatbot.component';
     BuscarCategoriaComponent,
     CarrinhoComponent,
     PesquisaComponent,
-    ChatbotComponent
   ],
   
   imports: [
