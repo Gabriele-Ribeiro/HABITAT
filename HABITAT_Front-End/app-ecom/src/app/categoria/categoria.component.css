@@ -23,3 +23,16 @@ button:hover{
 .font:hover{
     color: gray;
 }
+
+
+.cat{
+    background-color: rgba(191, 166, 107, 1);
+   
+}
+
+.cat2{
+    background-color: rgba(191, 166, 107, 1);
+    border-radius: 50% 50% 0% 0%;
+    margin-bottom: -1.5rem;
+    
+}
