@@ -1,15 +1,19 @@
+<body>
+   
   <div class="row-cols-4 p-5">
-  <div class="col-md-12 d-flex flex-wrap justify-content-between p-5 bg">
-
-<div *ngFor='let produto of categoria.produtosCriados' class="card cds" style="width: 18rem;">
-    <img src="{{produto.foto}}" class="card-img-top icard" alt="...">
-    <div class="card-body text-center">
-      <h5 class="card-title">{{produto.nomeProduto}}</h5>
-      <p class="card-text">{{produto.descricao}}</p>
-      <p>R${{produto.preco}}</p>
-      <a class="btn btn-primary m-1 cds bt" routerLink="/carrinho">Comprar</a>
-    </div>
+   <div class="col-md-12 d-flex flex-wrap justify-content-between p-5 bg">
+ 
+ <div *ngFor='let produto of categoria.produtosCriados' class="card cds me-4 mb-4" style="width: 18rem;">
+     <img src="{{produto.foto}}" class="card-img-top icard" alt="...">
+     <div class="card-body text-center">
+       <h5 class="card-title">{{produto.nomeProduto}}</h5>
+       <p class="card-text">{{produto.descricao}}</p>
+       <p>R${{produto.preco}}</p>
+       <a class="btn btn-primary m-1 cds bt" routerLink="/carrinho">Comprar</a>
+     </div>
+  </div>
+      
  </div>
-     
-</div>
-</div>
+ </div>
+ 
+ </body>

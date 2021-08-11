@@ -1,3 +1,7 @@
+body{
+  background-color: rgba(72, 213, 5, 0.39);
+}
+
 .bg{
     background-color: rgba(191, 166, 107, 1);
     margin-top: 20px;
@@ -18,7 +22,7 @@ button:hover{
     border-color: #B6ED9D;
   }
   .cds:hover{
-   box-shadow: 0 6px 10px rgba(72, 213, 5, 0.39), 0 3px 6px rgba(72, 213, 5, 0.39);
+   box-shadow: 0 6px 10px #B6ED9D, 0 3px 6px #B6ED9D;
   }
   
   .bt{
