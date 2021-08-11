@@ -23,14 +23,17 @@
             <li><a class="dropdown-item text-light BgH" [routerLink]="['/categoria-buscar', 4]">Acessórios</a></li>
             <li><a class="dropdown-item text-light BgH" [routerLink]="['/categoria-buscar', 5]">Beleza</a></li>
             <li><a class="dropdown-item text-light BgH" [routerLink]="['/categoria-buscar', 6]">Higiene</a></li>
-             <ul class="dropdown-menu navBg1" ><li>
-               
-                <a  class="dropdown-item text-light BgH" routerLink='/categoria'> Criar categoria</a></li>
-            <li><a  class="dropdown-item text-light BgH" routerLink="/produto">produtos</a></li>
-          </ul>
+            <hr> 
+            <div class="subnav">
+          <button class="subnavbtn">Area de Vendedor</button>
+          <div class="subnav-content">
+              <li><a  class="dropdown-item text-light BgH m-2 sm1" routerLink='/categoria'>Criar uma categoria</a></li>
+            <li><a  class="dropdown-item text-light BgH m-2 sm2" routerLink="/produto">Adicionar um produto</a></li>
+          </div>
+          </div>
           </ul>
         </li>
-
+        
         <li class="mt-md-3 me-3">
           <i routerLink='/blog' class="fas fa-newspaper fa" aria-hidden="true"></i>
         </li>
