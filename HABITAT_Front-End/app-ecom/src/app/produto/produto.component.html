@@ -1,35 +1,30 @@
 <body>
 
 
-<div class="container-fluid">
+<div class="container-fluid paD">
 
     <div class="row d-flex justify-content-center ">
 
-      <div class="col-12 fontText bg p-5">
+      <div class="col-md-12 fontText bg p-5">
 
-        <h1 class="fs-54 text-center"> Produtos </h1>
-        <h5 class="fs-18 text-center">Veja aqui todos os produtos cadastrados ou cadastre um novo:</h5>
+        <h1 class="fs text-center"> Produtos </h1>
+        <h5 class="fs text-center">Veja aqui todos os produtos cadastrados ou cadastre um novo:</h5>
 
         <div class="row  d-flex justify-content-lg-center mt-4 mb-5">
-          <div class="col-md-3 ">
+          <div class="col-md-4 ">
 
             <div class="form-group">
                 <input [(ngModel)]='produto.nomeProduto' type="text" class="form-control mb-2" id="nomeProduto" placeholder="Digite o nome do produto">
                 <input [(ngModel)]='produto.foto' type="text" class="form-control mb-2" id="foto" placeholder="Insira o Link da foto">
                 <input [(ngModel)]='produto.descricao' type="text" class="form-control mb-2" id="descricao" placeholder="Digite a descrição do produto">
-
+                <input [(ngModel)]='produto.preco' type="text" class="form-control mb-2" id="preco" placeholder="Digite o preço do produto">
 
                 <div class="form-group">
-                  <label for="texto">Escolha uma Categoria<a routerLink='/categoria'>  ou cadastre uma nova</a>:</label>
+                  <label class="fs" for="texto">Escolha uma Categoria ou <a class="fs1" routerLink='/categoria'> cadastre uma nova</a></label> <br>  
                   <select name="categoria" id="categoria" class="form-control mb-2" [(ngModel)]='idCategoria' (change)='findByIdCategoria()'>
-                    <option *ngFor='let item of listaCategoria'  value="{{item.id}}">{{item.tipoProduto}}</option>
+                 <option *ngFor='let item of listaCategoria' value="{{item.id}}">{{item.tipoProduto}}</option>
                   </select>
                 </div>
-                
-                
-
-                <input [(ngModel)]='produto.preco' type="text" class="form-control mb-2" id="preco" placeholder="Digite o preco">
-
 
                 <div class="d-flex justify-content-lg-center ">
                   <button class="btn btn-light botaoCadastrar" (click)='cadastrar()'>Cadastrar</button>
@@ -44,15 +39,11 @@
 
       </div>
 
-       
-         
-      
            <div class="row-cols-4 p-5">  
-             <H1 class="bgh">Todos os Produto</H1>
+             <h1 class="bgh">Todos os Produtos:</h1>
 
              <div class="col-md-12 d-flex flex-wrap justify-content-between p-5 bg">
 
-               
                 <div *ngFor='let produto of listaProdutos' class="card cds mb-3" style="width: 20rem;">
                   <img src="{{produto.foto}}" class="card-img-top icard" alt="...">
                   <div class="card-body text-center">
@@ -63,10 +54,11 @@
                     <a class="btn btn-primary m-1 cds bt" [routerLink]="['/produto-edit', produto.id]">Editar</a>
                     <a class="btn btn-primary m-1 cds bt" [routerLink]="['/produto-delete', produto.id]">Deletar</a>
                     </div>
+
                   </div>
-               </div>
-          </div>
-      </div>
-  </div>
- 
+                </div>
+             </div>
+        </div>
+    </div>
+</div>
 </body>

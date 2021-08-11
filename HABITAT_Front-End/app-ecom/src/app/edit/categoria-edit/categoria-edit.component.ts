@@ -21,11 +21,6 @@ export class CategoriaEditComponent implements OnInit {
   ) { }
 
   ngOnInit(){
-    if(environment.token == ''){
-      alert('Sua seção inspirou. Faça o Login novamente!')
-      this.router.navigate(['/logar'])
-    }
-
     let id = this.route.snapshot.params['id']
     this.findByIdCategoria(id)
   }

@@ -22,11 +22,6 @@ export class CategoriaDeleteComponent implements OnInit {
   ) { }
 
   ngOnInit(){
-    if(environment.token == ''){
-      alert('Sua seção inspirou. Faça o Login novamente!')
-      this.router.navigate(['/logar'])
-    }
-
     this.idCategoria = this.route.snapshot.params['id']
     this.findByIdCategoria(this.idCategoria)
 

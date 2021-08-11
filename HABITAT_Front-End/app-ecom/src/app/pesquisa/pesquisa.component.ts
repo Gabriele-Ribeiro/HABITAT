@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Categoria } from '../model/Categoria';
 import { Produto } from '../model/Produto';
-import { CategoriaService } from '../service/categoria.service';
 import { ProdutoService } from '../service/produto.service';
 
 @Component({
@@ -14,7 +12,7 @@ export class PesquisaComponent implements OnInit {
   categoriaProduto: string
 
   constructor(
-    private produtoService: ProdutoService,
+    private produtoService: ProdutoService
   ) { }
 
   ngOnInit(){
@@ -34,7 +32,5 @@ export class PesquisaComponent implements OnInit {
     {
       this.listaProdutos = resp
     })
-
 }
-
 }
