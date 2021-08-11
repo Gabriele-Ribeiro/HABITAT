@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Categoria } from '../model/Categoria';
 import { Produto } from '../model/Produto';
-import { CategoriaService } from '../service/categoria.service';
 import { ProdutoService } from '../service/produto.service';
 
 @Component({
@@ -14,7 +12,7 @@ export class PesquisaComponent implements OnInit {
   categoriaProduto: string
 
   constructor(
-    private produtoService: ProdutoService,
+    private produtoService: ProdutoService
   ) { }
 
   ngOnInit(){
@@ -24,17 +22,14 @@ export class PesquisaComponent implements OnInit {
   findAllProdutos(){
     this.produtoService.getAllProduto().subscribe((resp: Produto[])=>{
    this.listaProduto = resp
-   console.log("postagens "+ this.listaProduto)
     })
   }
 
   findByCategoriaProduto(){
-    listaProduto
     this.produtoService.getByCategoriaProduto(this.categoriaProduto).subscribe((resp: Produto[])=>
     {
-      this.listaPro duto = resp
+      this.listaProduto = resp
+      this.listaProduto.pop()
     })
-
 }
-
 }
