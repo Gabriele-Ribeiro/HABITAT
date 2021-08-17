@@ -30,11 +30,11 @@
               <div *ngFor='let produto of listaProdutos' class="card cds mt-2" style="width: 20rem">
                 <img src="{{produto.foto}}" class="card-img-top icard" alt="...">
                 <div class="card-body text-center">
-                  <h5 class="card-title">{{produto.nomeProduto}}</h5>
-                  <p class="card-text">{{produto.descricao}}</p>
-                  <p>R${{produto.preco}}</p>
+                  <h5 class="card-title texto">{{produto.nomeProduto}}</h5>
+                  <p class="card-text texto">{{produto.descricao}}</p>
+                  <p class="texto">R${{produto.preco}}</p>
                   <div class="d-flex justify-content-center">
-                  <a class="btn btn-primary m-1 cds bt" routerLink='/carrinho'>Comprar</a>
+                  <a class="btn btn-light" routerLink='/carrinho'>Comprar</a>
                   </div>
              </div>
             </div>

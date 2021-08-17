@@ -3,7 +3,10 @@
 }
 
 .paD{
-    padding-top: 30px;
+    padding: 30px;
+}
+.paD1{
+    padding-bottom: 30px;
 }
 
 button{

@@ -21,13 +21,11 @@ export class PesquisaComponent implements OnInit {
 
   findAllProdutos(){
     this.produtoService.getAllProduto().subscribe((resp: Produto[])=>{
-   this.listaProdutos = resp
-   
+   this.listaProdutos = resp  
    })
    }
 
   findByCategoriaProduto(){
-  // this.listaProdutos.pop()
     this.produtoService.getByCategoriaProduto(this.categoriaProduto).subscribe((resp: Produto[])=>
     {
       this.listaProdutos = resp
