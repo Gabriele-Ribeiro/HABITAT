@@ -1,10 +1,9 @@
-import { stringify } from '@angular/compiler/src/util';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
 import { Categoria } from '../model/Categoria';
 import { Produto } from '../model/Produto';
-import { Usuario } from '../model/Usuario';
+import { AlertasService } from '../service/alertas.service';
 import { CategoriaService } from '../service/categoria.service';
 import { ProdutoService } from '../service/produto.service';
 
@@ -24,11 +23,16 @@ export class ProdutoComponent implements OnInit {
   constructor(
     private router: Router,
     private produtoService: ProdutoService,
-    private categoriaService: CategoriaService
+    private categoriaService: CategoriaService,
+    private alertas: AlertasService
   ) { }
 
   ngOnInit() {
 
+    if(environment.tipo == 'COMPRADOR'){
+      this.alertas.showAlertInfo('Você precisa ser vendedor para ter acesso a essa rota.')
+      this.router.navigate(['/inicio'])
+    }
  
   this.findAllProdutos()
   this.getAllCategoria()
@@ -60,7 +64,7 @@ findByIdCategoria(){
     console.log("produto"+JSON.stringify(this.produto))
       this.produtoService.postProduto(this.produto).subscribe((resp: Produto)=>{
     this.produto = resp
-    alert('Produto cadastrado com sucesso!')
+    this.alertas.showAlertSuccess('Produto cadastrado com sucesso!')
     this.findAllProdutos()
     this.produto = new Produto()
   })

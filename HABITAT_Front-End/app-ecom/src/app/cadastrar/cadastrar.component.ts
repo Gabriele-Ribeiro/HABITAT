@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Usuario } from '../model/Usuario';
+import { AlertasService } from '../service/alertas.service';
 import { AuthService } from '../service/auth.service';
 
 @Component({
@@ -17,7 +18,8 @@ export class CadastrarComponent implements OnInit {
 
   constructor(
     private authService: AuthService,
-    private router: Router
+    private router: Router,
+    private alertas: AlertasService
   ) { }
 
   ngOnInit() {
@@ -38,14 +40,14 @@ export class CadastrarComponent implements OnInit {
     this.user.tipo = this.tipoUsuario
     console.log("user "+this.user)
     if(this.user.senha != this.confirmarSenha){
-      alert('As senhas não são compatíveis.')
+      this.alertas.showAlertInfo('Ops! As senhas não são compatíveis.')
 
     }else{
       console.log("usuario "+JSON.stringify(this.user))
       this.authService.cadastrar(this.user).subscribe((resp: Usuario)=> {
         this.user = resp
         this.router.navigate(['/logar'])
-        alert ('Usuário cadastrado com sucesso!')
+        this.alertas.showAlertSuccess('Usuário cadastrado com sucesso!')
       })
 
     }

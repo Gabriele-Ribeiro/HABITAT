@@ -35,7 +35,7 @@ export class AuthService {
   }
 
 
-  Vendedor(){
+  vendedor(){
     let ok: boolean = false
    if(environment.tipo == 'VENDEDOR'){
      ok = true

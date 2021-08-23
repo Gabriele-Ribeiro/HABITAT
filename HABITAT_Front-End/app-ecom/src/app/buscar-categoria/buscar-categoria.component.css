@@ -8,21 +8,21 @@ body{
  
 }
 
-button{
+.aB{
     background-color: rgba(191, 166, 107, 1);
     color: white;
 }
 
-button:hover{
-    background-color: white;
-    color: #B6ED9D;
+.aB:hover{
+    background-color: #B6ED9D;
+    color:white;
 }
 
 .cds{
     border-color: #B6ED9D;
   }
   .cds:hover{
-   box-shadow: 0 6px 10px #B6ED9D, 0 3px 6px #B6ED9D;
+    box-shadow: 0 5px 5px #B6ED9D;
   }
   
   .bt{
@@ -35,8 +35,16 @@ button:hover{
   
   .bgh{
     background-color:  rgba(191, 166, 107, 1);
-    border-radius:50% 50% 0% 0%;
-    margin-bottom: -1.5rem;
-    text-align: center;
+  color: white;
+  border-radius:40% 40% 0% 0%;
+  margin-bottom: -1.5rem;
+  text-align: center;
   }
   
+  img{
+    border: solid 10px white;
+  }
+
+  .texto{
+    color: rgb(61, 61, 61);
+  }

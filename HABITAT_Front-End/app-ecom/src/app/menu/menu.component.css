@@ -47,18 +47,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 .subnav {
   float: left;
   overflow: hidden;
@@ -84,7 +72,7 @@
   width: 180px;
   height: 100px;
   z-index: 1;
-  border-radius: 0% 15% 15% 0%;
+  
 }
 
 .subnav-content a {
@@ -96,7 +84,6 @@
 .subnav-content a:hover {
   background-color: rgba(72, 213, 5, 0.39);
   color: black;
-  border-radius: 0% 15% 15% 0%;
 }
 
 .subnav:hover .subnav-content {

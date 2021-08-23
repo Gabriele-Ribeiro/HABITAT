@@ -44,3 +44,11 @@ button:hover{
     margin-bottom: -1.5rem;
     text-align: center;
   }
+
+  img{
+    border: solid 10px white;
+  }
+
+  .texto{
+    color: rgb(61, 61, 61);
+  }
